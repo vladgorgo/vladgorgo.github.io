@@ -1,0 +1,120 @@
+﻿* {
+font-family:Verdana;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #001845;
+}
+.center {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: #001233;
+    color: white;
+    width: 100%;
+    /*position:fixed;*/
+    bottom: 0;
+}
+header {
+    text-align: center;
+    background-color: #001233;
+    color: white;
+    width: 100%;
+    position: fixed;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+.gamepreview {
+    text-align: center;
+    background-color: #002855;
+    color: white;
+    width: 100%;
+}
+
+.column1 {
+    float: left;
+    width: 100%;
+}
+.column2 {
+    
+    float: left;
+    width: 50%;
+}
+.column3 {
+    float: left;
+    width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    margin: 0;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #001233;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+    ul.topnav li a:hover:not(.active) {
+        background-color: #023E7D;
+    }
+
+    ul.topnav li a.active {
+        background-color: #0466C8;
+    }
+
+ul.topnav li.right {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
+    }
+}
