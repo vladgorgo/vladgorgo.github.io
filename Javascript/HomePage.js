@@ -12,6 +12,7 @@ function AddHeader()
     var icon_width = 60; 
     $('#Header').empty().append(
         ''
+
         +'<ul class="topnav">'
         + '<li><a href="./"><img src="Images/lw-cropped.png" width="170" height="60"></a></li>'
         //+ '<li><a href="/AboutUs" height="48">About Us</a></li>'
@@ -39,7 +40,7 @@ function AddFooter()
         + '<br>'
         + '<p><img src="Images/lw-cropped.png" width="170" height="60"></p>'
 
-        + '<div><a href="Terms">Terms</a> | <a href="Privacy">Privacy</a></div>'
+        + '<div><a href="Terms.html">Terms</a> | <a href="Policy.html">Policy</a></div>'
         + '<p>©2021 Replay Studio SRL</p>'
 
         + '</div>'
