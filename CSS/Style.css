@@ -233,3 +233,8 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .border-dark-grey,.hover-border-dark-grey:hover,.border-dark-gray,.hover-border-dark-gray:hover{border-color:#616161!important}
 .border-pale-red,.hover-border-pale-red:hover{border-color:#ffe7e7!important}.border-pale-green,.hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .border-pale-yellow,.hover-border-pale-yellow:hover{border-color:#ffffcc!important}.border-pale-blue,.hover-border-pale-blue:hover{border-color:#e7ffff!important}
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.row-padding img {margin-bottom: 12px}
+.sidebar {width: 120px;background: #222;}
+#main {margin-left: 120px}
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
