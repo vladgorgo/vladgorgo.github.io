@@ -13,8 +13,8 @@ window.mobileCheck = function()
     return check;};
 
 function AddHeader()
-{if(mobileCheck==true)
-    {
+{
+    
     var icon_width = 60; 
     $('#Header').empty().append(
         ''
@@ -32,24 +32,12 @@ function AddHeader()
 
         +'</ul>'
     );
-    }
-else
-{
-    var icon_width = 60; 
-    $('#Header').empty().append(
-        ''
 
-        +'<ul class="topnav">'
-        + '<li><a href="./"><img src="Images/lw-cropped.png" width="170" height="60"></a></li>'
-        //+ '<li><a href="/AboutUs" height="48">About Us</a></li>'
-        +'</ul>'
-    );
-}
     
 }
 
 function AddFooter()
-{   if(mobileCheck==true){
+{  
     $('#Footer').empty().append(
         ''
         + '<footer>'
@@ -71,9 +59,7 @@ function AddFooter()
         + '</footer>'
     );
 }
-else
-{$('#Footer').empty().append('');
-}}
+
 
 
 
