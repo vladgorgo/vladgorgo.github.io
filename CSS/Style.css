@@ -241,10 +241,63 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .column2 {
     
     float: left;
-    width: 45%;
+    width: 50%;
+}
+.column3 {
+    
+    float: left;
+    width: 33%;
 }
 @media (max-width: 767px) {
     .hidden-mobile {
       display: none;
     }
   }
+
+  .testimonial {
+	background-color: #0b1429;
+	border-radius: 20px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	overflow: hidden;
+	max-width: 100%;
+	width: 400px;
+}
+
+.testimonial-body {
+	padding: 40px 40px 80px;
+}
+
+
+
+.testimonial-body .fa-quote-right {
+	color: rgb(0, 0, 0);
+	font-size: 40px;
+	float: right;
+}
+
+.testimonial-footer {
+	background-color: #05070c;
+	color: #fff;
+	padding: 40px;
+	text-align: center;
+}
+
+.testimonial-footer img {
+	border-radius: 50%;
+	border: 5px solid rgb(124, 0, 0);
+	height: 120px;
+	width: 120px;
+	margin-top: -100px;
+}
+
+.testimonial-footer h3 {
+	margin: 10px 0;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.testimonial-footer h4 {
+	color: #1c1f75;
+	margin: 0;
+	letter-spacing: 1px;
+}
