@@ -16,7 +16,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <body>
 
 <!-- Navbar -->
-<div>
+<div class="top">
   <div class="bar indigo card left-align large">
     <a class="bar-item button hide-medium hide-large right padding-large hover-white large indigo" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="#" class="bar-item button padding-large indigo">Acasa</a>
@@ -42,23 +42,48 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <!-- First Grid -->
 <div id="Despre" class="row-padding light-grey padding-64 container">
   <div class="content">
-    <div class="twothird">
+    <div>
       <h1>Despre Noi</h1>
-      <h5 class="padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+      <img src="img/Laptop-computer.jpg" alt="" width="100%" height="100%">
+        <!-- Slideshow container -->
+          <div class="slideshow-container">
 
-      <p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <!-- Full-width slides/quotes -->
+            <div class="mySlides">
+              <p>Societatea noastră are o experiență de peste 20 ani în dezvoltarea aplicațiilor informatice pentru domeneniul economico-financiar.</p>
+            </div>
+
+            <div class="mySlides">
+              <p>Sistemele informatice realizate sunt rezultatul activitații unei echipe profesioniste, specializată în informatică, formată din analitiști și programatori. <br/> Aceste produse sunt implementate cu succes și funcționeza în sute de locații.</p>
+            </div>
+
+            <div class="mySlides">
+              <p>Ne adresăm atât clienților din sectorul bugetar cât și agenților economici din sectorul privat, relația față de clientii noștri fiind o prioritate, <br/> fapt pentru care suntem deschiși la soluționarea cerințelor fiecărui client în parte.</p>
+            </div>
+
+            <!-- Next/prev buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+
+          <!-- Dots/bullets/indicators -->
+          <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+          <div class="container">
+          <hr class="rounded">
+          </div>
+
+              <script src="slider.js"></script>
+      
     </div>
 
-    <div class="third center">
-      <img src="img/Laptop-computer.jpg" alt="Girl in a jacket" width="100%" height="100%">
-    </div>
+    
+      
+    
   </div>
-</div>
-
-<div class="container">
-<hr class="rounded">
 </div>
 
 
