@@ -1,11 +1,25 @@
 // Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
+function NavBar() {
     var x = document.getElementById("navDemo");
-    if (x.className.indexOf("show") == -1) {
+    if (x.className.indexOf("show") == -1) 
+    {
       x.className += " show";
-    } else { 
+    } 
+    else
+    { 
       x.className = x.className.replace(" show", "");
     }
+    
+      document.getElementById("an").innerHTML = new Date().getFullYear();
+
   }
+function closeNavBar()
+{
+  var x = document.getElementById("navDemo");
+  x.className = x.className.replace(" show", "");
+
+}
+
+
 
 

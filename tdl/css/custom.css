@@ -150,8 +150,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 
 
-
-
 /* Zona Form Contact */
 
 input[type=text], select, textarea {
@@ -196,6 +194,7 @@ input[type=text], select, textarea {
     --varyDarkBlue: hsl(234, 12%, 34%);
     --grayishBlue: hsl(229, 6%, 66%);
     --veryLightGray: hsl(0, 0%, 98%);
+    --bluegray: #607d8b;
     --weight1: 200;
     --weight2: 400;
     --weight3: 600;
@@ -253,7 +252,7 @@ input[type=text], select, textarea {
   
   @media (max-width: 950px) and (min-width: 450px) {
     .box {
-        text-align: center;
+        text-align: left;
     }
   }
   
@@ -268,6 +267,9 @@ input[type=text], select, textarea {
   }
   .orange-card {
     border-top: 3px solid var(--orange);
+  }
+  .bluegray-card {
+    border-top: 3px solid var(--bluegray);
   }
   
   h2 {
@@ -300,4 +302,28 @@ input[type=text], select, textarea {
         width: 30%;
     }
     
+  }
+
+
+  .lista
+  {
+    width: 90%;
+    padding: 0px;
+    margin:100px auto;
+    border: 1px #bbb;
+    
+  }
+  .lista li
+  {
+    list-style:none;
+    background: #eee;
+    border-top: 1px solid #ccc;
+    padding: 10px 20px;
+  }
+
+  .lista li:first-child{
+    background:#607d8b;
+    color:white;
+    border:none;
+    border-radius: 5px 5px 0px 0px;
   }
