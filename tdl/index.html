@@ -1,9 +1,20 @@
+<!-- TO DO 
+Functionalitate JS:
+-navbar telefon
+-contact form 
+
+CSS Loading
+Gasire Poze mai ok -->
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <title>TDL Soft</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="css/colors.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,17 +26,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </style>
 <body>
 
-<!-- Navbar -->
 <div class="top">
-  <div class="bar indigo card left-align large">
+  <div class="bar blue-gray card left-align large">
     <a class="bar-item button hide-medium hide-large right padding-large hover-white large indigo" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="bar-item button padding-large indigo">Acasa</a>
+    <a href="#" class="bar-item button padding-large">Acasa</a>
     <a href="#Despre" class="bar-item button hide-small padding-large hover-white">Despre Noi</a>
     <a href="#Proiecte" class="bar-item button hide-small padding-large hover-white">Proiecte</a>
     <a href="#Contact" class="bar-item button hide-small padding-large hover-white">Contact</a>
   </div>
-
-  <!-- Navbar on small screens -->
   <div id="navDemo" class="bar-block indigo hide hide-large hide-medium large">
     <a href="#Despre" class="bar-item button padding-large">Despre Noi</a>
     <a href="#Proiecte" class="bar-item button padding-large">Proiecte</a>
@@ -34,78 +42,84 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </div>
 
 <!-- Header -->
-<header class="indigo center" style="padding:128px 16px">
+<header class="dark-grey center" style="padding:256px 16px; background-image: url('img/poza_office1.jpg'); background-position: 50%; background-size: 100%; background-blend-mode:hard-light;">
+  
   <h1 class="margin jumbo">TDL SOFT</h1>
-  <!-- <button class="button black padding-large large margin-top">Get Started</button> -->
+  
 </header>
+
+
+
+
 
 <!-- First Grid -->
 <div id="Despre" class="row-padding light-grey padding-64 container">
   <div class="content">
-    <div>
-      <h1>Despre Noi</h1>
-      <img src="img/Laptop-computer.jpg" alt="" width="100%" height="100%">
-        <!-- Slideshow container -->
-          <div class="slideshow-container">
-
-            <!-- Full-width slides/quotes -->
-            <div class="mySlides">
-              <p>Societatea noastră are o experiență de peste 20 ani în dezvoltarea aplicațiilor informatice pentru domeneniul economico-financiar.</p>
-            </div>
-
-            <div class="mySlides">
-              <p>Sistemele informatice realizate sunt rezultatul activitații unei echipe profesioniste, specializată în informatică, formată din analitiști și programatori. <br/> Aceste produse sunt implementate cu succes și funcționeza în sute de locații.</p>
-            </div>
-
-            <div class="mySlides">
-              <p>Ne adresăm atât clienților din sectorul bugetar cât și agenților economici din sectorul privat, relația față de clientii noștri fiind o prioritate, <br/> fapt pentru care suntem deschiși la soluționarea cerințelor fiecărui client în parte.</p>
-            </div>
-
-            <!-- Next/prev buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
-
-          <!-- Dots/bullets/indicators -->
-          <div class="dot-container">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-          </div>
-          <div class="container">
-          <hr class="rounded">
-          </div>
-
-              <script src="slider.js"></script>
+  
+  <div class="row1-container">
+    
+  
+    <div class="box red-card">
+      <h2>Scurtă Descriere</h2>
+      <p>Sistemele informatice realizate sunt rezultatul activitații unei echipe profesioniste, specializată în informatică, formată din analitiști și programatori. <br/> Aceste produse sunt implementate cu succes și funcționeza în sute de locații.</p>
       
     </div>
-
-    
-      
-    
+    <div class="box box cyan-card">
+      <h2>Experiență</h2>
+      <p>Societatea noastră are o experiență de peste 20 ani în dezvoltarea aplicațiilor informatice pentru domeneniul economico-financiar.</p>
+    </div>
+    <div class="box box blue-card">
+      <h2>Ținta</h2>
+      <p>Ne adresăm atât clienților din sectorul bugetar cât și agenților economici din sectorul privat, relația față de clientii noștri fiind o prioritate, <br/> fapt pentru care suntem deschiși la soluționarea cerințelor fiecărui client în parte.</p>
+    </div>
   </div>
+
 </div>
 
 
-<!-- Second Grid -->
+<br/>
+
 <div id="Proiecte" class="row-padding light-grey padding-64 container">
   <div class="content">
-    <div class="third center">
-      <!-- <i class="fa fa-coffee padding-64 text-indigo margin-right"></i> -->
-      <img src="img/slider-lessstress-01.png" alt="Girl in a jacket" width="100%" height="100%">
-
+  
+  <div class="row1-container">
+    
+  
+    <div class="box orange-card">
+      <h2>Pentru Sectorul Bugetar</h2>
+              <li>Modul contabilitate bugetara;</li>
+              <li>Modul mijloace fixe;</li>
+              <li>Modul obiecte de inventar ;</li>
+              <li>Modul materiale;</li>
+              <li>Modul salariazare personal si depunere declaratii;</li>
+              <li>Modul ALOP</li>
+              <li>Modul pentru evidenta stocului de carte "Biblio"</li>
+              <li>Modul asistenta sociala PRIMAJ;</li>
+              <li>Modul import Registrul de Casa din aplicata de Impozite si Taxe;</li>
+              <li>Modul import incasari POS din aplicata de Impozite si Taxe;</li>
+              <li>Modul import extrase de trezorerie din sistemul FOREXEBUG ;</li>
+              <li>Modul transmitere declaratii FOREXEBUG;</li>
+              <li>Modul inventariere si etichetare mijloace fixe si stocuri prin coduri de bare ;</li>
+              <li>Modul facturare clienti ;</li>
+              <li>Modul de generare si depunere declaratiile 300 si 394 ;</li>
+              <li>Modul calcul diferente salariale actualizate cu indici de inflatie si dobanzi penalizatoare aferente ca urmare a sentintelor judecatoresti ;</li>
     </div>
-
-    <div class="twothird">
-      <h1>Proiecte</h1>
-      <h5 class="padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-
-      <p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
+    
+    <div class="box box orange-card">
+      <h2>Pentru Sectorul financiar</h2>
+      <li>Modul contabilitate financiara;</li>
+      <li>Modul de evidenta si gestiunea  mijloacelor fixe;</li>
+      <li>Modul de evidenta si gestiunea stocurilor;</li>
+      <li>Modul salariazare personal si depunere declaratii;</li>
+      <li>Modul vanzare POS pentru magazine si restaurante;</li>
+      <li>Modul de evidenta calculul contractelor de arenda (societati agricole);</li>
+      <li>Modul de evidenta a proprietatilor agricole (societati agricole);</li>
+      <li>Modul facturare clienti;</li>
     </div>
   </div>
+
 </div>
+
 
 
 <div id="Contact" class="container">
@@ -123,7 +137,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </div>
 
 
-<footer class="container center gray opacity">  
+<footer class="container center blue-gray opacity">  
  <p style="color: whitesmoke;">Copyright © 2022 TDL SOFT GROUP SRL</a></p>
 </footer>
 
