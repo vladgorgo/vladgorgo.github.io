@@ -1258,13 +1258,14 @@ border-radius: 10px;
   }
   #certificate
   {
-    width:120px !important;
-    padding-left:5px !important;
+    width: 10rem !important;
+    padding-left: 5px !important;
   }
   #certificate p
   {
     display:none;
   }
+
 
   #logo_svg
   {
@@ -1285,6 +1286,10 @@ border-radius: 10px;
   .grup
   {
     margin-left: 3rem;
+    width: 16rem;
+  }
+  .grup:hover {
+    transform: scale(1.0);
   }
   #motto1,#motto2
   {

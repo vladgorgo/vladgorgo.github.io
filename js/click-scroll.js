@@ -15,8 +15,14 @@ $.each(sectionArray, function(index, value){
              $('.navbar-nav .nav-item .nav-link:link').addClass('inactive');  
              $('.navbar-nav .nav-item .nav-link').eq(index).addClass('active');
              $('.navbar-nav .nav-item .nav-link').eq(index).removeClass('inactive');
+             
+            //  Close Menu After Selecting Domain
+             $(".navbar-toggler").addClass("collapsed");
+             $(".navbar-toggler").attr("aria-expanded","false");
+             $("#navbarNav").removeClass("show");
+             
+
          }
-         
      });
     
     $('.click-scroll').eq(index).click(function(e){
@@ -25,8 +31,9 @@ $.each(sectionArray, function(index, value){
         $('html, body').animate({
             'scrollTop':offsetClick
         }, 300)
+
     });
-    
+
 });
 
 $(document).ready(function(){
