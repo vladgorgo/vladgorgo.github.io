@@ -50,11 +50,13 @@ function changeContinutDomenii(nrDomeniu)
       +"pana la -160ºC cu diferite materiale : foamglass, poliuretan , poliizocianurat, kaiflex,armaflex, polistiren.</p>";
       
       
-      content+="<img src=\"images\/domenii1_1.png\" style=\"width:26rem;height:25rem;\">";
-      content+="<img src=\"images\/domenii1_2.png\" style=\"width:25rem;height:25rem;\">";
+      // content+="<img src=\"images\/domenii1_1.png\" style=\"width:25rem;height:25rem;\">";
+      // content+="<img src=\"images\/domenii1_2.png\" style=\"width:25rem;height:25rem;\">";
 
       content+="<p><ul><li>CNE Cernavoda</li><li>Rompetrol</li><li>Interagro Zimnicea</li><li>Linde Galati</li></ul></p>"
       
+      $("#elementListaDomeniiExtra").empty().append("<img src=\"images\/domenii1_2.png\" style=\"width:25rem;height:25rem;padding-top:1rem;\">");
+
       
       $("#elementListaDomenii1").addClass("active");
     }
@@ -76,7 +78,7 @@ function changeContinutDomenii(nrDomeniu)
 
       content+="<p><ul><li>CNE Cernavoda Unitatea 1</li><li> Rafinaria Arpechim Pitesti</li><li>Rominserv</li><li>Petrotel Lukoil Ploiesti</li></ul></p>"
 
-
+      
 
 
       $("#elementListaDomenii2").addClass("active");
