@@ -1,12 +1,3 @@
-/*
-
-TemplateMo 578 First Portfolio
-
-https://templatemo.com/tm-578-first-portfolio
-
-*/
-
-
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
@@ -206,10 +197,10 @@ strong {
   animation: spinner .9s linear infinite;
 }
 
-@-webkit-@keyframes spinner {
+/* @-webkit-@keyframes spinner {
   to {transform: rotate(360deg);
   }
-}
+} */
 
 @keyframes spinner {
   to {transform: rotate(360deg);}
@@ -612,15 +603,13 @@ strong {
 }
 
 .grup {
-  display: block;
-  max-width: 20rem;
-  margin: auto;
-  transition: all ease 0.2s;
+
+  max-width: 16rem;
+  margin-left: 2rem;
+
 }
 
-.grup:hover {
-  transform: scale(1.3);
-}
+
 
 
 /*---------------------------------------
@@ -1138,6 +1127,7 @@ strong {
   .navbar .container {
     margin-right: 12px;
     margin-left: 12px;
+
   }
 }
 
@@ -1240,8 +1230,9 @@ border-radius: 10px;
 
 #hartaGoogle
 {
-  width:600px;
-  height: 450px;
+  width:100%;
+  height: 100%;
+  padding: 0px;;
 
 }
 #elementListaDomeniiExtra img
@@ -1252,7 +1243,7 @@ border-radius: 10px;
 @media screen and (max-width: 768px) {
   #hartaGoogle
   {
-    width:90vw;
+    width:80vw;
     height:67.5vh;
 
   }
@@ -1285,12 +1276,10 @@ border-radius: 10px;
   }
   .grup
   {
-    margin-left: 3rem;
+    margin-left: 2rem;
     width: 16rem;
   }
-  .grup:hover {
-    transform: scale(1.0);
-  }
+
   #motto1,#motto2
   {
     font-size:1.2rem !important;
@@ -1325,6 +1314,7 @@ border-radius: 10px;
   max-width: 1000px;
   position: relative;
   margin: auto;
+  
 }
 
 /* Next & previous buttons */
@@ -1394,4 +1384,9 @@ border-radius: 10px;
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.textGallery {font-size: 32px}
+}
+
+
+.lang_active{
+  color:red;
 }

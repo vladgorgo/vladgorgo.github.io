@@ -5,6 +5,7 @@
 
     // PRE LOADER
     $(window).load(function(){
+      
       $('.preloader').fadeOut(1000); 
     });
 
@@ -35,6 +36,23 @@
 
 })(window.jQuery);
 
+
+function changeLanguage(numar_limba)
+{
+ if(numar_limba===1)
+ {
+  $("#lang_RO").addClass("lang_active");
+  $("#lang_EN").removeClass("lang_active");
+ }
+
+ if(numar_limba===2)
+ {
+  $("#lang_RO").removeClass("lang_active");
+  $("#lang_EN").addClass("lang_active");
+ }
+    
+      
+}
 
 function changeContinutDomenii(nrDomeniu)
   {
@@ -202,37 +220,47 @@ function changeContinutDomenii(nrDomeniu)
     
   }
 
-
+function pozaCertificate()
+{
+    if(screen.height>screen.width)
+    {
+      $('#certificate_poza').empty().append('<img src="images/cert/cert_mobile.png" style="width: 90%;margin-left:1rem;"/>');
+    }
+    else{
+      $('#certificate_poza').empty().append('<img src="images/cert/cert.png" style="width: 90%;margin-left:4rem;"/>');
+    }
+}
 
 $(document).ready(function () {
-  changeContinutDomenii(1)
+  pozaCertificate();
+  changeLanguage(1);
 });
 
 
-/*Photo Gallery*/ 
-let slideIndex = 1;
-showSlides(slideIndex);
+// /*Photo Gallery*/ 
+// let slideIndex = 1;
+// showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+// function plusSlides(n) {
+//   showSlides(slideIndex += n);
+// }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+// function currentSlide(n) {
+//   showSlides(slideIndex = n);
+// }
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" activeGallery", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " activeGallery";
-}
+// function showSlides(n) {
+//   let i;
+//   let slides = document.getElementsByClassName("mySlides");
+//   let dots = document.getElementsByClassName("dot");
+//   if (n > slides.length) {slideIndex = 1}    
+//   if (n < 1) {slideIndex = slides.length}
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";  
+//   }
+//   for (i = 0; i < dots.length; i++) {
+//     dots[i].className = dots[i].className.replace(" activeGallery", "");
+//   }
+//   slides[slideIndex-1].style.display = "block";  
+//   dots[slideIndex-1].className += " activeGallery";
+// }
