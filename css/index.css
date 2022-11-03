@@ -30,6 +30,15 @@
   --font-weight-normal:           400;
   --font-weight-medium:           500;
   --font-weight-bold:             700;
+
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently*/
+                          
 }
 
 body {
@@ -1389,4 +1398,32 @@ border-radius: 10px;
 
 .lang_active{
   color:red;
+}
+.lang_active:hover{
+  color:red;
+}
+
+summary
+{
+  color:white;
+  font-size:1.2rem;
+}
+
+details{
+
+  background-color: #00458a;
+  padding: 10px;
+  border-radius: 10px;
+  margin:10px 0px;
+}
+
+details p,details ul li{
+  margin-top: 1rem;
+  color:white;
+}
+#galerie
+{
+  margin-left:0px;
+  width: 350px;
+  margin-top: 2rem;
 }

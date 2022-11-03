@@ -228,67 +228,113 @@
                             </div>
                         </div>
 
-                        <div style="margin-top:5rem;">
+                        <div style="margin-top:5rem">
                             <p>
                                 <b>Experiența, seriozitatea și pregatirea profesională</b> a colectivului nostru, precum și capacitatea forței de muncă 
                                 și a dotării tehnice, oferă garanția executării de lucrări în domeniile:  
                             </p>
                         
-                            <details>
-                                <summary>Construcții industriale</summary>
-                                <p>Compania STIZO Nuclear S.A. execută construcții industriale la cheie cuprinzând săpătura (inclusiv în spații limitate prin crearea de incinte de lucru), îmbunătățire teren (pernă piatră), structura de beton propriu-zisă (inclusiv lucrările de zidarie portantă), hidroizolații sub și supra terane, finisaje, atât în domeniul Nuclear cat și în domeniul Civil.</p>
-                            </details>
-                            <details>
-                                <summary>Consolidări de structuri în construcții </summary>
-                                <p>Compania deține procedee tehnologice de consolidare a structurilor de beton în domeniul Nuclear și în domeniul Civil.</p>
-                            </details>
-                            <details>
-                                <summary>Termoizolații pe conducte și echipamente </summary>
-                                <ul>
-                                    <li>Izolații cu vată minerală și protecție de tablă pe conducte și echipamente, inclusiv structura metalică suport pentru acestea. 
-                                        În domeniul Nuclear și în domeniul Civil. 
-                                    </li>
-                                    <li>Izolații reci pentru temperaturi până la -160ᵒC cu foamglass, poliuretan, poliizocianurat, kaiflex, armaflex, polistiren și protecție cu tablă folosind o tehnologie proprie de execuție.  
-                                        În domeniul Nuclear și în domeniul Civil.    
-                                    </li>
-                                </ul>
-                            </details>
-                            <details>
-                                <summary>Închideri structuri metalice cu panouri sandwich (izolație cu vată minerală sau poliuretan). </summary>
-                            </details>
-                            <details>
-                                <summary>Protecții anti-corozive</summary>
-                                <ul>
-                                    <li>STIZO Nuclear S.A. execută o gamă largă de protecții anti-corozive pe structuri metalice și de beton.  
-                                    </li>
-                                    <li>În domeniul Nuclear execută căptușeli epoxidice/poliuretanice decontaminabile pe structuri de beton (pereți, tavane, pardoseli), iar pentru bazinele de apa detine tehnologia de execuție, ambele aprobate de Client și CNCAN - autoritatea națională pentru reglementarea, autorizarea și controlul activităților nucleare.   
-                                    </li>
-                                </ul>                           
-                            </details>
-                            <details>
-                                <summary>Protecții antifoc executate cu mortare sau vopsele termospumante </summary>
-                                <ul>
-                                    <li>Protecții antifoc cu mortar pe bază de vată minerală, ciment și adaosuri de materiale rezistente la foc. 
-                                        Materialul folosit de noi are agrement tehnic, fiind atestat atât în regim hidrocarbonic, cât și în regim celulozic. 
-                                    </li>
-                                    <li>Vopselele termospumante oferă soluții atât pentru foc celulozic, cât și pentru foc hidrocarburi. 
-                                        Compania, personalul de execuție, precum și sculele și echipamentele din dotare sunt avizate ISU (pompieri). 
-                                           
-                                    </li>
-                                </ul>                              
-                            </details>
-                            <details>
-                                <summary>Termohidroizolații</summary>
-                                <p>STIZO Nuclear S.A. execută diverse tipuri de termohidroizolații conform proiectelor date, sau la cerere după tehnologii proprii în domeniul Nuclear și în domeniul Civil.</p>
-                            </details>
-                            <details>
-                                <summary>Lucrări speciale</summary>
-                                <p>STIZO Nuclear S.A. execută lucrări de torcretare beton, închidere fisuri în beton prin injectare și etanșare rosturi de tasare după tehnologii proprii în domeniul Nuclear și în domeniul Civil.</p>
-                            </details>
+                            <div class="row">
+                                <div id="detaliiDomenii" class="col-lg-6 col-12 mt-5 mt-lg-0" >
+                                    <details onclick="changeLucrariReferinta(1)">
+                                        <summary>Construcții industriale</summary>
+                                        
+                                        <ul>
+                                            <li>
+                                                Compania STIZO Nuclear S.A. execută construcții industriale la cheie cuprinzând săpătura (inclusiv în spații limitate prin crearea de incinte de lucru), îmbunătățire teren (pernă piatră), structura de beton propriu-zisă (inclusiv lucrările de zidarie portantă), hidroizolații sub și supra terane, finisaje, atât în domeniul Nuclear cat și în domeniul Civil.
+                                            </li>
+                                        </ul>
+                                        
+                                    </details>
+                                    <details onclick="changeLucrariReferinta(2)">
+                                        <summary>Consolidări de structuri în construcții </summary>
+                                        <ul>
+                                            <li>
+                                                Compania deține procedee tehnologice de consolidare a structurilor de beton în domeniul Nuclear și în domeniul Civil.
+                                            </li>
+                                        </ul>
+                                    </details>
+                                    <details onclick="changeLucrariReferinta(3)">
+                                        <summary>Termoizolații pe conducte și echipamente </summary>
+                                        <ul>
+                                            <li>Izolații cu vată minerală și protecție de tablă pe conducte și echipamente, inclusiv structura metalică suport pentru acestea. 
+                                                În domeniul Nuclear și în domeniul Civil. 
+                                            </li>
+                                            <li>Izolații reci pentru temperaturi până la -160ᵒC cu foamglass, poliuretan, poliizocianurat, kaiflex, armaflex, polistiren și protecție cu tablă folosind o tehnologie proprie de execuție.  
+                                                În domeniul Nuclear și în domeniul Civil.    
+                                            </li>
+                                        </ul>
+                                    </details>
+                                    <details onclick="changeLucrariReferinta(4)">
+                                        <summary>Închideri structuri metalice cu panouri sandwich</summary>
+                                        <ul>
+                                            <li>
+                                                Izolație cu vată minerală sau poliuretan
+                                            </li>
+                                        </ul>
+                                    </details>
+                                    <details onclick="changeLucrariReferinta(5)">
+                                        <summary>Protecții anti-corozive</summary>
+                                        <ul>
+                                            <li>STIZO Nuclear S.A. execută o gamă largă de protecții anti-corozive pe structuri metalice și de beton.  
+                                            </li>
+                                            <li>În domeniul Nuclear execută căptușeli epoxidice/poliuretanice decontaminabile pe structuri de beton (pereți, tavane, pardoseli), iar pentru bazinele de apa detine tehnologia de execuție, ambele aprobate de Client și CNCAN - autoritatea națională pentru reglementarea, autorizarea și controlul activităților nucleare.   
+                                            </li>
+                                        </ul>                           
+                                    </details>
+                                    <details onclick="changeLucrariReferinta(6)">
+                                        <summary>Căptușeli cu betoane refractare</summary>
+                                        
+                                        <ul>
+                                            <li>
+                                                Căptușeli cu betoane refractare aplicate prin torcretare, turnare și stampare, inclusiv sudarea structurii metalice suport cu respectarea cerințelor ISCIR, atât în domeniul Nuclear cât și în domeniul Civil.
+                                                Execuția betoanelor refractare în industria de prelucrare a petrolului este conformă normelor UOP. 
+                                            </li>
+                                        </ul>
+                                        
+                                    </details>
+                                    <details onclick="changeLucrariReferinta(7)">
+                                        <summary>Protecții antifoc executate cu mortare sau vopsele termospumante </summary>
+                                        <ul>
+                                            <li>Protecții antifoc cu mortar pe bază de vată minerală, ciment și adaosuri de materiale rezistente la foc. 
+                                                Materialul folosit de noi are agrement tehnic, fiind atestat atât în regim hidrocarbonic, cât și în regim celulozic. 
+                                            </li>
+                                            <li>Vopselele termospumante oferă soluții atât pentru foc celulozic, cât și pentru foc hidrocarburi. 
+                                                Compania, personalul de execuție, precum și sculele și echipamentele din dotare sunt avizate ISU (pompieri). 
+                                                   
+                                            </li>
+                                        </ul>                              
+                                    </details>
+                                    <details onclick="changeLucrariReferinta(8)">
+                                        <summary>Termohidroizolații</summary>
+                                            <ul>
+                                                <li>
+                                                    STIZO Nuclear S.A. execută diverse tipuri de termohidroizolații conform proiectelor date, sau la cerere după tehnologii proprii în domeniul Nuclear și în domeniul Civil.
+                                                </li>
+                                            </ul>
+                                            
+                                    </details>
+                                    <details onclick="changeLucrariReferinta(9)">
+                                        <summary>Lucrări speciale</summary>
+                                        <ul>
+                                            <li>
+                                                STIZO Nuclear S.A. execută lucrări de torcretare beton, închidere fisuri în beton prin injectare și etanșare rosturi de tasare după tehnologii proprii în domeniul Nuclear și în domeniul Civil.
+                                            </li>
+                                        </ul>
+                                    </details>
+                                </div>
+                      
+                                <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+                                    <p style="font-size:1.4rem;color:black;"><b>Lucrări de referință:</b><div id="titluLucrare" style="font-size:1.2rem;"></div></p>
+                                    <div id="lucrariReferinta">-</div>
 
-              
+                                    <img src="images/gal.png" id="galerie"/>    
+                                </div>
+                                
 
+                            </div>
                         
+                            
                             <p>
                                 Toate lucrările executate de <b>STIZO Nuclear S.A.</b> sunt procedurate, fiind aprobate de către Clienți, iar în domeniul 
                                 Nuclear și de către <b>CNCAN</b> - autoritatea națională pentru reglementarea, autorizarea și controlul activităților nucleare.
@@ -351,16 +397,22 @@
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2400.1246637436543!2d28.046518905023895!3d44.325462837538076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ba9ce08cdc72eb%3A0x6fc05893874b01fe!2sStr.%20Valea%20Ci%C8%99melei%203%2C%20Cernavod%C4%83%20905200!5e0!3m2!1sen!2sro!4v1667171978041!5m2!1sen!2sro"  id="hartaGoogle" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>         
                         </div>
                         <div class="col-md-6">
-                          <div style="margin-top:5rem;">
+                          <div style="margin-top:2rem;">
                                                        
                             
                             <a style="color:#535da1;font-size:large;" target="_blank" href = "https://www.google.com/maps?ll=44.325789,28.049857&z=16&t=m&hl=en&gl=RO&mapclient=embed&q=Str.+Valea+Ci%C8%99melei+3+Cernavod%C4%83+905200"><i class="fa fa-map-marker" ></i> Cernavoda , Valea Cismelei nr. 3 , Constanta</a>
                             <br/>
                             <br/>
-                            <a style="color:#535da1;font-size:large;" href = "tel:0742102180"><i class="fa fa-phone" ></i> 0742 102 180</a>
+                            <a style="color:#535da1;font-size:large;" href = "tel:0241238663"><i class="fa fa-phone" ></i> +40 241 238 663</a>
                             <br/>
                             <br/>
-                            <a style="color:#535da1;font-size:large;" href = "mailto:soared@cernavoda.ro"><i class="fa fa-envelope" ></i> soared@cernavoda.ro</a>
+                            <a style="color:#535da1;font-size:large;" href = "tel:0742102182"><i class="fa fa-mobile" ></i> +40 742 102 182</a>
+                            <br/>
+                            <br/>
+                            <a style="color:#535da1;font-size:large;" href = "tel:0241237425"><i class="fa fa-fax" ></i> +40 241 237 425</a>
+                            <br/>
+                            <br/>
+                            <a style="color:#535da1;font-size:large;" href = "mailto:stizon@cernavoda.ro"><i class="fa fa-envelope" ></i> stizon@cernavoda.ro</a>
                             <br/>
                             <br/>
                             <a style="color:#535da1;font-size:large;" target="_blank" href = "https://www.facebook.com/stizonuclearcernavoda/"><i class="fa fa-facebook-square" ></i> Facebook</a>

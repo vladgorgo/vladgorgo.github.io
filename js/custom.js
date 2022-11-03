@@ -231,10 +231,202 @@ function pozaCertificate()
     }
 }
 
+
+function changeLucrariReferinta(numar)
+{
+  var lucrariReferinta="";
+
+if(numar==1)
+{
+  lucrariReferinta+="<ul>"
+  +"<li>Fabrica de var Corbu</li>"
+  +"<li>Structuri de beton armat pentru Silozuri Heineken Constanța</li>"
+  +"<li>Stația de epurare biologica Fabrica de Ulei Constanța</li>"
+  +"<li>Structuri de beton armat pentru Siloz cereale 50000 t SOCEP Constanța</li>"
+  +"</ul> "
+  
+  +"<p>Nuclear:</p>"
+  +"<ul>"
+  +"<li>SNN Cernavodă - EFCVS </li>"
+  +"<li>SNN Cernavodă - extindere BCU</li>"
+  +"<li>SNN Cernavodă Seiru</li>"
++"</ul> "
+
+$("#titluLucrare").empty().append("Construcții industriale:")
+}
+
+if(numar==2)
+{
+  lucrariReferinta+="<ul>"
+  +"<li>Consolidare hotel Astoria – Eforie Nord, hotel Europa – Eforie Nord; hotel Carmen – Venus; </li>"
+  +"<li>Consolidare siloz fosforita CHIMPEX Port Constanța</li>"
+  +"<li>Consolidare rezervor Rompetrol MIDIA</li>"
+  +"</ul>"
+  $("#titluLucrare").empty().append("Consolidări de structuri în construcții:")
+
+}
+if(numar==3)
+{
+  lucrariReferinta+="<ul>"
+  +"<li>Izolații calde:</li>"
+  +"<ul>"
+  +"<li>SNN Cernavodă Unitatea 1 și Unitatea 2 </li>"
+  +"<li>Rompetrol</li>"
+  +"<li>Lukoil</li>"
+  +"</ul>"
+  +"<li>Izolații reci:</li>"
+  +"<ul>"
+  +"<li>SNN Cernavodă Unitatea 1 și Unitatea 2 </li>"
+  +"<li>Rompetrol </li>"
+  +"<li>Linde Galați</li>"
+  +"</ul>"
+  +"</ul>"
+  $("#titluLucrare").empty().append("Termoizolații:")
+
+}
+if(numar==4)
+{
+  lucrariReferinta+="<ul>"
+  +"<li>SNN Cernavodă Unitatea 1 și Unitatea 2</li>"
+  +"<li>SNN Cernavodă Seiru</li>"
+  +"</ul>"
+
+  $("#titluLucrare").empty().append("Închideri cu panouri sandwich:")
+}
+if(numar==5)
+{
+  lucrariReferinta+="<p>Protecții anti-corozive:</p>"
+  +"<ul>"
+  +"<li>Pod Cernavodă (vopsitorie)</li>"
+  +"<li>Linde Galați</li>"
+  +"</ul> "
+  
+  +"<p>Nuclear:</p>"
+  +"<ul>"
+  +"<li>SNN Cernavodă Unitatea 1 și Unitatea 2 – Captușeli epoxidice / poliuretanice decontaminabile</li>"
+  +"<li>Fabrica de Combustibil Nuclear Pitesti - Căptușeli epoxidice / poliuretanice decontaminabile</li>"
++"</ul> "
+
+$("#titluLucrare").empty().append("Construcții industriale:")
+
+}
+
+if(numar==6)
+{
+  lucrariReferinta+="<p>Izolații cu betoane refractare:</p>"
+  +"<ul>"
+  +"<li>SNN Cernavodă Unitatea 1 și Unitatea 2</li>"
+  +"<li>Rominserv</li>"
+  +"<li>Petrotel Lukoil Ploiești</li>"
+  +"</ul> "
+$("#titluLucrare").empty().append("Construcții industriale:")
+
+}
+
+if(numar==7)
+{
+  lucrariReferinta+="<p>Foc celulozic:</p>"
+  +"<ul>"
+  +"<li>CNE Cernavodă</li>"
+  +"<li>Tribunalul Municipiului București</li>"
+  +"<li>BRD Piața Victoriei</li>"
+  +"<li>BRD Televiziunea București</li>"
+  +"<li>Mobexpert Pipera</li>"
+  +"<li>Kaufland: București, Timisoara, Satu Mare, Targu Mures, Alba Iulia</li>"
+  +"<li>Centrul Expozițional Moldova Iași</li>"
+  +"<li>Real Vitan București</li>"
+  +"<li>Biofuel – Fabrica de alcool Zimnicea</li>"
+  +"<li>Fabrica de ulei – Dropia Zimnicea</li>"
+  +"<li>Carrefour Ploiești</li>"
+  +"<li>Hypermarket Cora București, Titan București</li>"
+  +"<li>Fabrica de Combustibil Nuclear Pitești</li>"
+
+  +"</ul> "
+  
+  +"<p>Foc hidrocarburi :</p>"
+  +"<ul>"
+  +"<li>Rominserv</li>"
+  +"<li>Petrotel Lukoil Ploiești</li>"
+  +"<li>Combinatul Petrochimic Pitești</li>"
+
++"</ul> "
+
+
+
+$("#titluLucrare").empty().append("Protecții antifoc:")
+
+}
+
+if(numar==8)
+{
+  lucrariReferinta+="<p></p>"
+  +"<ul>"
+  +"<li>SNN Cernavodă (domeniul Nuclear)</li>"
+  +"<li>Chimpex (domeniul Civil)</li>"
+  +"<li>Socep (domeniul Civil)</li>"
+  +"</ul> "
+
+
+
+
+
+$("#titluLucrare").empty().append("Termohidroizolații:")
+
+}
+
+if(numar==9)
+{
+  lucrariReferinta+="<p>În domeniul Nuclear:</p>"
+  +"<ul>"
+  +"<li>SNN Cernavodă Unitatea 1 și Unitatea 2 - injecții cu mortare</li>"
+  +"<li>SNN Cernavodă Unitatea 1 și Unitatea 2 - etanșări rosturi de tasare</li>"
+  +"</ul> "
+  
+  +"<p>În domeniul Civil:</p>"
+  +"<ul>"
+  +"<li>Etanșare rosturi de tasare Siloz fosforita Chimpex</li>"
+  +"<li>Etanșare rosturi de tasare Siloz cereale Socep</li>"
++"</ul> "
+
+
+$("#titluLucrare").empty().append("Lucrări speciale:")
+
+}
+  $("#lucrariReferinta").empty().append(lucrariReferinta);
+
+
+  
+
+}
+
+
+
+
 $(document).ready(function () {
   pozaCertificate();
   changeLanguage(1);
+
+
+
+  // Fetch all the details element.
+const details = document.querySelectorAll("details");
+
+// Add the onclick listeners.
+details.forEach((targetDetail) => {
+  targetDetail.addEventListener("click", () => {
+    // Close all the details that are not targetDetail.
+    details.forEach((detail) => {
+      if (detail !== targetDetail) {
+        detail.removeAttribute("open");
+      }
+    });
+  });
 });
+});
+
+
+
+
 
 
 // /*Photo Gallery*/ 
