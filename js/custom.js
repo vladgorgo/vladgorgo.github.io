@@ -206,9 +206,9 @@ $("#titluLucrare").empty().append("Construcții industriale:")
 adaugaPoza("img-domenii/protectii_anticorozive/p1protectiianticorozivenuclear.jpg");
 adaugaPoza("img-domenii/protectii_anticorozive/p2protectiianticorozivenuclear.jpg");
 adaugaPoza("img-domenii/protectii_anticorozive/p5bcaptuseliepoxinuclear.jpg");
-adaugaPoza("img-domenii/protectii_anticorozive/PodCernavodaDSC_9039.jpg");
-adaugaPoza("img-domenii/protectii_anticorozive/PodCernavodaDSC_9113.jpg");
-adaugaPoza("img-domenii/protectii_anticorozive/PodCernavodaDSC_9176.jpg");
+adaugaPoza("img-domenii/protectii_anticorozive/PodCernavodaDSC9039.jpg");
+adaugaPoza("img-domenii/protectii_anticorozive/PodCernavodaDSC9113.jpg");
+adaugaPoza("img-domenii/protectii_anticorozive/PodCernavodaDSC9176.jpg");
 adaugaPoza("img-domenii/protectii_anticorozive/ProtectiianticoroziveLindep8.jpg");
 
 }
