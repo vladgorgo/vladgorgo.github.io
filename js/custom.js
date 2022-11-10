@@ -54,172 +54,6 @@ function changeLanguage(numar_limba)
       
 }
 
-function changeContinutDomenii(nrDomeniu)
-  {
-    var content="";
-
-    $("#elementListaDomenii1").removeClass("active");
-    $("#elementListaDomenii2").removeClass("active");
-    $("#elementListaDomenii3").removeClass("active");
-    //$("#elementListaDomeniiExtra").empty()
-    if(nrDomeniu===1)
-    {
-      content+="<p>Firma dispune de tehnologii de izolare a conductelor si echipamentelor la care temperatura de lucru este de "
-      +"pana la -160ºC cu diferite materiale : foamglass, poliuretan , poliizocianurat, kaiflex,armaflex, polistiren.</p>";
-      
-      
-      // content+="<img src=\"images\/domenii1_1.png\" style=\"width:25rem;height:25rem;\">";
-      // content+="<img src=\"images\/domenii1_2.png\" style=\"width:25rem;height:25rem;\">";
-
-      content+="<p><ul><li>CNE Cernavoda</li><li>Rompetrol</li><li>Interagro Zimnicea</li><li>Linde Galati</li></ul></p>"
-      
-      // $("#elementListaDomeniiExtra").empty().append("<img src=\"images\/domenii1_2.png\" style=\"width:25rem;height:25rem;padding-top:1rem;\">");
-
-      $("#elementListaDomeniiExtra").empty().append(
-        '<div class="slideshow-container">'
-          +'<div class="mySlides">'
-          +'<div class="numbertext">1 / 2</div>'
-          +'<img src="images/domenii1_1.png" style="width:100%">'
-          +'</div>'
-          +'<div class="mySlides">'
-          +'<div class="numbertext">2 / 2</div>'
-          +'<img src="images/domenii1_2.png" style="width:100%">'
-          +'</div>'
-          +'<a class="prev" onclick="plusSlides(-1)">❮</a>'
-          +'<a class="next" onclick="plusSlides(1)">❯</a>'
-          +'</div>'
-          +'<br>'
-          +'<div style="text-align:center">'
-          +'<span class="dot" onclick="currentSlide(1)"></span> '
-          +'<span class="dot" onclick="currentSlide(2)"></span> '
-          +'</div>'
-      );
-      currentSlide(1);
-
-      $("#elementListaDomenii1").addClass("active");
-    }
-    
-
-    if(nrDomeniu===2)
-    {
-      content+="<p>Dotarea cu scule si echipamente este conforma normelor UOP.</p>";
-
-
-      // content+="<img src=\"images\/domenii2_1.png\" style=\"width:13.3rem;height:13.3rem;\">";
-      // content+="<img src=\"images\/domenii2_2.png\" style=\"width:13.3rem;height:13.3rem;\">";
-      // content+="<img src=\"images\/domenii2_3.png\" style=\"width:13.3rem;height:13.3rem;\">";
-      // content+="<img src=\"images\/domenii2_4.png\" style=\"width:13.3rem;height:13.3rem;\">";
-      // content+="<img src=\"images\/domenii2_5.png\" style=\"width:13.3rem;height:13.3rem;\">";
-      // content+="<img src=\"images\/domenii2_6.png\" style=\"width:13.3rem;height:13.3rem;\">";
-      // content+="<img src=\"images\/domenii2_7.png\" style=\"width:13.3rem;height:13.3rem;\">";
-
-
-      content+="<p><ul><li>CNE Cernavoda Unitatea 1</li><li> Rafinaria Arpechim Pitesti</li><li>Rominserv</li><li>Petrotel Lukoil Ploiesti</li></ul></p>"
-
-      // $("#elementListaDomeniiExtra").empty().append("<img src=\"images\/domenii2_1.png\" style=\"width:25rem;height:25rem;padding-top:1rem;\">");
-
-      $("#elementListaDomeniiExtra").empty().append(
-          '<div class="slideshow-container">'
-          +'<div class="mySlides">'
-          +'<div class="numbertext">1 / 7</div>'
-          +'<img src="images/domenii2_1.png" style="width:100%">'
-          +'</div>'
-          +'<div class="mySlides">'
-          +'<div class="numbertext">2 / 7</div>'
-          +'<img src="images/domenii2_2.png" style="width:100%">'
-          +'</div>'
-          +'<div class="mySlides">'
-          +'<div class="numbertext">3 / 7</div>'
-          +'<img src="images/domenii2_3.png" style="width:100%">'
-          +'</div>'
-          +'<div class="mySlides">'
-          +'<div class="numbertext">4 / 7</div>'
-          +'<img src="images/domenii2_4.png" style="width:100%">'
-          +'</div>'
-          +'<div class="mySlides">'
-          +'<div class="numbertext">5 / 7</div>'
-          +'<img src="images/domenii2_5.png" style="width:100%">'
-          +'</div>'
-          +'<div class="mySlides">'
-          +'<div class="numbertext">6 / 7</div>'
-          +'<img src="images/domenii2_6.png" style="width:100%">'
-          +'</div>'
-          +'<div class="mySlides">'
-          +'<div class="numbertext">7 / 7</div>'
-          +'<img src="images/domenii2_7.png" style="width:100%">'
-          +'</div>'
-          +'<a class="prev" onclick="plusSlides(-1)">❮</a>'
-          +'<a class="next" onclick="plusSlides(1)">❯</a>'
-          +'</div>'
-          +'<br>'
-          +'<div style="text-align:center">'
-          +'<span class="dot" onclick="currentSlide(1)"></span> '
-          +'<span class="dot" onclick="currentSlide(2)"></span> '
-          +'<span class="dot" onclick="currentSlide(3)"></span> '
-          +'<span class="dot" onclick="currentSlide(4)"></span> '
-          +'<span class="dot" onclick="currentSlide(5)"></span> '
-          +'<span class="dot" onclick="currentSlide(6)"></span> '
-          +'<span class="dot" onclick="currentSlide(7)"></span> '
-          +'</div> '
-      );
-
-      currentSlide(1);
-
-
-      $("#elementListaDomenii2").addClass("active");
-    }
-    
-
-
-    if(nrDomeniu===3)
-    {
-      content+="<p>Vopselele termospumante ofera solutii atat pentru foc celulozic, cat si pentru foc hidrocarburi.</p>";
-
-      content+="<li>Foc Celulozic</li>"
-      content+="<ul>"
-      content+="<li>CNE Cernavoda</li><li>Tribunalul Municipiului Bucuresti</li><li> BRD Piata Victoriei</li><li> BRD Televiziunea Bucuresti</li><li> Mobexpert Pipera</li>"
-      content+="<li> Kaufland Bucuresti , Timisoara , Satu Mare , Targu Mures , Alba Iulia</li><li> Centrul Expozitional Moldova Iasi</li><li> Real Vitan Bucuresti</li>"
-      content+="<li> Biofuel – Fabrica de alcool Zimnicea</li><li> Fabrica de ulei – Dropia Zimnicea</li><li> Carrefour Ploiesti</li>"
-      content+="<li> Hypermarket Cora Bucuresti , Titan Bucuresti</li><li> FCN Pitesti</li>"
-      content+="</ul>"
-
-      content+="<li>Foc Hidrocarburi</li>"
-      content+="<ul>"
-      content+="<li>Rominserv</li>"
-      content+="<li>Petrotel Lukoil Ploiesti</li>"
-      content+="</ul>"
-
-      // content+="<img src=\"images\/domenii3_1.png\" style=\"width:25rem;height:25rem;padding-top:2rem\">";
-
-
-
-      $("#elementListaDomenii3").addClass("active");
-      $("#elementListaDomeniiExtra").empty().append(
-        '<div class="slideshow-container">'
-          
-          +'<div class="mySlides">'
-          +'<div class="numbertext">1 / 1</div>'
-          +'<img src="images/domenii3_1.png" style="width:100%">'
-          +'</div>'
-          +'<a class="prev" onclick="plusSlides(-1)">❮</a>'
-          +'<a class="next" onclick="plusSlides(1)">❯</a>'
-          +'</div>'
-          +'<br>'
-          +'<div style="text-align:center">'
-          +'<span class="dot" onclick="currentSlide(1)"></span> '
-          +'</div>'
-      );
-      currentSlide(1);
-
-       //$("#elementListaDomeniiExtra").empty().append("<img src=\"images\/domenii3_1.png\" style=\"width:25rem;height:25rem;padding-top:1rem;\">");
-    }
-    
-
-
-    $("#contentDomenii").empty().append(content)
-    
-  }
-
 function pozaCertificate()
 {
     if(screen.height>screen.width)
@@ -231,11 +65,29 @@ function pozaCertificate()
     }
 }
 
+function deschidePozaFullscreen(path)
+{
+  //$("#poza_fs").empty().append('<img src="'+path+'"/>')
+  $('#poza_fs').magnificPopup({type:'image'});
+
+}
+
+function adaugaPoza(path)
+{
+  $(".containerGalerie").append(
+      '<div class="gallery">'
+      // +'<a class="poza_fs" onclick="deschidePozaFullscreen(\''+path+'\')">'
+      +'<a class="poza_fs" href="'+path+'")>'
+
+       +'<img src="thb-'+path+'" width="800" height="800">'
+      +'</a>'
+      +'</div>');
+} 
 
 function changeLucrariReferinta(numar)
 {
   var lucrariReferinta="";
-
+  $(".containerGalerie").empty();
 if(numar==1)
 {
   lucrariReferinta+="<ul>"
@@ -247,12 +99,22 @@ if(numar==1)
   
   +"<p>Nuclear:</p>"
   +"<ul>"
-  +"<li>SNN Cernavodă - EFCVS </li>"
-  +"<li>SNN Cernavodă - extindere BCU</li>"
-  +"<li>SNN Cernavodă Seiru</li>"
+
+  +"<li>SN Nuclearelectrica, CNE Cernavodă - EFCVS</li>";
+  +"<li>SN Nuclearelectrica, CNE Cernavodă - extindere BCU</li>";
+  +"<li>SN Nuclearelectrica, CNE Cernavodă - Seiru</li>";
+
 +"</ul> "
 
-$("#titluLucrare").empty().append("Construcții industriale:")
+$("#titluLucrare").empty().append("Construcții industriale:");
+
+adaugaPoza("img-domenii/constructii/constructiiEFFCVS.jpg");
+adaugaPoza("img-domenii/constructii/constructiiCorbu2.jpg");
+adaugaPoza("img-domenii/constructii/Socep 20221026_172828.jpg");
+adaugaPoza("img-domenii/constructii/StatiadetratareFabricadeUleip12.jpg");
+adaugaPoza("img-domenii/constructii/StatiedetratareFabricadeUlei 11.jpg");
+
+
 }
 
 if(numar==2)
@@ -263,6 +125,12 @@ if(numar==2)
   +"<li>Consolidare rezervor Rompetrol MIDIA</li>"
   +"</ul>"
   $("#titluLucrare").empty().append("Consolidări de structuri în construcții:")
+  
+  adaugaPoza("img-domenii/consolidari_structuri/Chimpex20221027_103314.jpg");
+  adaugaPoza("img-domenii/consolidari_structuri/ConsolidarerezervorMidia20180519_100519.jpg");
+  adaugaPoza("img-domenii/consolidari_structuri/ConsolidarerezervorMidia20180512_093045.jpg");
+  adaugaPoza("img-domenii/consolidari_structuri/ConsolidareRezervorMidia20180512_130426.jpg");
+
 
 }
 if(numar==3)
@@ -270,28 +138,55 @@ if(numar==3)
   lucrariReferinta+="<ul>"
   +"<li>Izolații calde:</li>"
   +"<ul>"
-  +"<li>SNN Cernavodă Unitatea 1 și Unitatea 2 </li>"
+  +"<li>SN Nuclearelectrica, CNE Cernavodă Unitatea 1 și Unitatea 2 </li>"
   +"<li>Rompetrol</li>"
   +"<li>Lukoil</li>"
   +"</ul>"
   +"<li>Izolații reci:</li>"
   +"<ul>"
-  +"<li>SNN Cernavodă Unitatea 1 și Unitatea 2 </li>"
+  +"<li>SN Nuclearelectrica, CNE Cernavodă Unitatea 1 și Unitatea 2 </li>"
   +"<li>Rompetrol </li>"
   +"<li>Linde Galați</li>"
   +"</ul>"
   +"</ul>"
   $("#titluLucrare").empty().append("Termoizolații:")
 
+  adaugaPoza("img-domenii/termoizolatii/IzolatiireciLinde1.jpg");
+  adaugaPoza("img-domenii/termoizolatii/IzolatiireciLindep23.jpg");
+  adaugaPoza("img-domenii/termoizolatii/IzolatiireciLindep24.jpg");
+  adaugaPoza("img-domenii/termoizolatii/IzolatiireciLindep25.jpg");
+  adaugaPoza("img-domenii/termoizolatii/IzolatiitermicecaldeMidia1.jpg");
+  adaugaPoza("img-domenii/termoizolatii/IzolatiitermicecaldeMidia2.jpg");
+  adaugaPoza("img-domenii/termoizolatii/IzolatiitermicecaldeMidia3.jpg");
+  adaugaPoza("img-domenii/termoizolatii/IzolatiitermicecaldeMidiap81.jpg");
+  adaugaPoza("img-domenii/termoizolatii/IzolatiitermicecaldeRompetrol.jpg");
+  adaugaPoza("img-domenii/termoizolatii/IzolatiitermicecaldeRompetrolMidiap27.jpg");
+  adaugaPoza("img-domenii/termoizolatii/IzolatiitermiceSNN3.jpg");
+  adaugaPoza("img-domenii/termoizolatii/TermoizolatiiCNEp19.jpg");
+  adaugaPoza("img-domenii/termoizolatii/TermoizolatiiCNEp20.jpg");
+  adaugaPoza("img-domenii/termoizolatii/TermoizolatiiCNEp21.jpg");
+  adaugaPoza("img-domenii/termoizolatii/TermoizolatiiCNEp22.jpg");
+
+
 }
 if(numar==4)
 {
   lucrariReferinta+="<ul>"
-  +"<li>SNN Cernavodă Unitatea 1 și Unitatea 2</li>"
-  +"<li>SNN Cernavodă Seiru</li>"
+  +"<li>SN Nuclearelectrica, CNE Cernavodă Unitatea 1 și Unitatea 2</li>"
+  +"<li>SN Nuclearelectrica, CNE Cernavodă Seiru</li>"
   +"</ul>"
 
   $("#titluLucrare").empty().append("Închideri cu panouri sandwich:")
+  adaugaPoza("img-domenii/inchideri_panouri_sandwich/CNErompan.jpg");
+  adaugaPoza("img-domenii/inchideri_panouri_sandwich/Seiru20181113_143250.jpg");
+  adaugaPoza("img-domenii/inchideri_panouri_sandwich/SeiruIMG20221031WA0004.jpg");
+  adaugaPoza("img-domenii/inchideri_panouri_sandwich/SeiruIMG20221031WA0006.jpg");
+  adaugaPoza("img-domenii/inchideri_panouri_sandwich/SeiruIMG20221031WA000708.jpg");
+  adaugaPoza("img-domenii/inchideri_panouri_sandwich/SeiruIMG20221031WA0008.jpg");
+  adaugaPoza("img-domenii/inchideri_panouri_sandwich/SeiruIMG2022103WA0002.jpg");
+  adaugaPoza("img-domenii/inchideri_panouri_sandwich/SeiruIMG2022103WA0007.jpg");
+  adaugaPoza("img-domenii/inchideri_panouri_sandwich/SeiruIMG2022103WA0011.jpg");
+  
 }
 if(numar==5)
 {
@@ -303,11 +198,18 @@ if(numar==5)
   
   +"<p>Nuclear:</p>"
   +"<ul>"
-  +"<li>SNN Cernavodă Unitatea 1 și Unitatea 2 – Captușeli epoxidice / poliuretanice decontaminabile</li>"
-  +"<li>Fabrica de Combustibil Nuclear Pitesti - Căptușeli epoxidice / poliuretanice decontaminabile</li>"
+  +"<li>SN Nuclearelectrica, CNE Cernavodă Unitatea 1 și Unitatea 2 – Captușeli epoxidice / poliuretanice decontaminabile</li>"
+  +"<li>Fabrica de Combustibil Nuclear Pitești - Căptușeli epoxidice / poliuretanice decontaminabile</li>"
 +"</ul> "
 
 $("#titluLucrare").empty().append("Construcții industriale:")
+adaugaPoza("img-domenii/protectii_anticorozive/p1protectiianticorozivenuclear.jpg");
+adaugaPoza("img-domenii/protectii_anticorozive/p2protectiianticorozivenuclear.jpg");
+adaugaPoza("img-domenii/protectii_anticorozive/p5bcaptuseliepoxinuclear.jpg");
+adaugaPoza("img-domenii/protectii_anticorozive/PodCernavodaDSC_9039.JPG");
+adaugaPoza("img-domenii/protectii_anticorozive/PodCernavodaDSC_9113.JPG");
+adaugaPoza("img-domenii/protectii_anticorozive/PodCernavodaDSC_9176.JPG");
+adaugaPoza("img-domenii/protectii_anticorozive/ProtectiianticoroziveLindep8.jpg");
 
 }
 
@@ -315,7 +217,7 @@ if(numar==6)
 {
   lucrariReferinta+="<p>Izolații cu betoane refractare:</p>"
   +"<ul>"
-  +"<li>SNN Cernavodă Unitatea 1 și Unitatea 2</li>"
+  +"<li>SN Nuclearelectrica, CNE Cernavodă Unitatea 1 și Unitatea 2</li>"
   +"<li>Rominserv</li>"
   +"<li>Petrotel Lukoil Ploiești</li>"
   +"</ul> "
@@ -327,19 +229,25 @@ if(numar==7)
 {
   lucrariReferinta+="<p>Foc celulozic:</p>"
   +"<ul>"
-  +"<li>CNE Cernavodă</li>"
-  +"<li>Tribunalul Municipiului București</li>"
-  +"<li>BRD Piața Victoriei</li>"
-  +"<li>BRD Televiziunea București</li>"
-  +"<li>Mobexpert Pipera</li>"
-  +"<li>Kaufland: București, Timisoara, Satu Mare, Targu Mures, Alba Iulia</li>"
-  +"<li>Centrul Expozițional Moldova Iași</li>"
-  +"<li>Real Vitan București</li>"
-  +"<li>Biofuel – Fabrica de alcool Zimnicea</li>"
-  +"<li>Fabrica de ulei – Dropia Zimnicea</li>"
-  +"<li>Carrefour Ploiești</li>"
-  +"<li>Hypermarket Cora București, Titan București</li>"
-  +"<li>Fabrica de Combustibil Nuclear Pitești</li>"
+ 
+
+
+
+
++"<li>SN Nuclearelectrica, CNE Cernavodă </li>";
++"<li>Tribunalul Municipiului București </li>";
++"<li>BRD Piața Victoriei </li>";
++"<li>BRD Televiziunea București </li>";
++"<li>Mobexpert Pipera </li>";
++"<li>Kaufland: București, Timișoara, Satu Mare, Târgu Mures, Alba Iulia </li>";
++"<li>Centrul Expozițional Moldova Iași </li>";
++"<li>Real Vitan București </li>";
++"<li>Biofuel – Fabrica de alcool Zimnicea </li>";
++"<li>Fabrica de ulei – Dropia Zimnicea </li>";
++"<li>Carrefour Ploiești </li>";
++"<li>Hypermarket Cora București, Titan București </li>";
++"<li>SN Nuclearelectrica, Fabrica de Combustibil Nuclear Pitești </li>";
+
 
   +"</ul> "
   
@@ -354,6 +262,10 @@ if(numar==7)
 
 
 $("#titluLucrare").empty().append("Protecții antifoc:")
+adaugaPoza("img-domenii/protectii_foc/ProtectiefocMidia1.jpg");
+adaugaPoza("img-domenii/protectii_foc/ProtectiefocMidia2.jpg");
+adaugaPoza("img-domenii/protectii_foc/ProtectiefocMidiap62.jpg");
+
 
 }
 
@@ -361,13 +273,20 @@ if(numar==8)
 {
   lucrariReferinta+="<p></p>"
   +"<ul>"
-  +"<li>SNN Cernavodă (domeniul Nuclear)</li>"
-  +"<li>Chimpex (domeniul Civil)</li>"
-  +"<li>Socep (domeniul Civil)</li>"
+  +"<li>SN Nuclearelectrica, CNE Cernavodă (domeniul Nuclear)</li>";
+  +"<li>CHIMPEX, Port Constanța (domeniul Civil)</li>";
+  +"<li>SOCEP, Port Constanța (domeniul Civil)</li>";
+
+
+
+
   +"</ul> "
 
 
-
+adaugaPoza("img-domenii/termohidroizolatii/Hidroizolatiip1.jpg");
+adaugaPoza("img-domenii/termohidroizolatii/Hidroizolatiip2.jpg");
+adaugaPoza("img-domenii/termohidroizolatii/Hidroizolatiip3.jpg");
+adaugaPoza("img-domenii/termohidroizolatii/Hidroizolatiip4.jpg");
 
 
 $("#titluLucrare").empty().append("Termohidroizolații:")
@@ -378,14 +297,14 @@ if(numar==9)
 {
   lucrariReferinta+="<p>În domeniul Nuclear:</p>"
   +"<ul>"
-  +"<li>SNN Cernavodă Unitatea 1 și Unitatea 2 - injecții cu mortare</li>"
-  +"<li>SNN Cernavodă Unitatea 1 și Unitatea 2 - etanșări rosturi de tasare</li>"
+  +"<li>SN Nuclearelectrica, CNE Cernavodă Unitatea 1 și Unitatea 2 - injecții cu mortare</li>"
+  +"<li>SN Nuclearelectrica, CNE Cernavodă Unitatea 1 și Unitatea 2 - etanșări rosturi de tasare</li>"
   +"</ul> "
   
   +"<p>În domeniul Civil:</p>"
   +"<ul>"
-  +"<li>Etanșare rosturi de tasare Siloz fosforita Chimpex</li>"
-  +"<li>Etanșare rosturi de tasare Siloz cereale Socep</li>"
+  +"<li>CHIMPEX, Port Constanța - etanșări rosturi de tasare Siloz fosforita</li>"
+  +"<li>SOCEP, Port Constanța - etanșări rosturi de tasare Siloz cereale</li>"
 +"</ul> "
 
 
@@ -393,6 +312,8 @@ $("#titluLucrare").empty().append("Lucrări speciale:")
 
 }
   $("#lucrariReferinta").empty().append(lucrariReferinta);
+  $('.poza_fs').magnificPopup({type:'image'});
+
 
 
   
@@ -403,7 +324,7 @@ $("#titluLucrare").empty().append("Lucrări speciale:")
 
 
 $(document).ready(function () {
-  pozaCertificate();
+  //pozaCertificate();
   changeLanguage(1);
 
 
@@ -429,30 +350,3 @@ details.forEach((targetDetail) => {
 
 
 
-// /*Photo Gallery*/ 
-// let slideIndex = 1;
-// showSlides(slideIndex);
-
-// function plusSlides(n) {
-//   showSlides(slideIndex += n);
-// }
-
-// function currentSlide(n) {
-//   showSlides(slideIndex = n);
-// }
-
-// function showSlides(n) {
-//   let i;
-//   let slides = document.getElementsByClassName("mySlides");
-//   let dots = document.getElementsByClassName("dot");
-//   if (n > slides.length) {slideIndex = 1}    
-//   if (n < 1) {slideIndex = slides.length}
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";  
-//   }
-//   for (i = 0; i < dots.length; i++) {
-//     dots[i].className = dots[i].className.replace(" activeGallery", "");
-//   }
-//   slides[slideIndex-1].style.display = "block";  
-//   dots[slideIndex-1].className += " activeGallery";
-// }
