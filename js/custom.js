@@ -190,7 +190,7 @@ if(numar==4)
 }
 if(numar==5)
 {
-  lucrariReferinta+="<p>Protecții anti-corozive:</p>"
+  lucrariReferinta+="<p></p>"
   +"<ul>"
   +"<li>Pod Cernavodă (vopsitorie)</li>"
   +"<li>Linde Galați</li>"
@@ -202,26 +202,26 @@ if(numar==5)
   +"<li>Fabrica de Combustibil Nuclear Pitești - Căptușeli epoxidice / poliuretanice decontaminabile</li>"
 +"</ul> "
 
-$("#titluLucrare").empty().append("Construcții industriale:")
+$("#titluLucrare").empty().append("Protecții anti-corozive:")
 adaugaPoza("img-domenii/protectii_anticorozive/p1protectiianticorozivenuclear.jpg");
 adaugaPoza("img-domenii/protectii_anticorozive/p2protectiianticorozivenuclear.jpg");
 adaugaPoza("img-domenii/protectii_anticorozive/p5bcaptuseliepoxinuclear.jpg");
-adaugaPoza("img-domenii/protectii_anticorozive/PodCernavodaDSC9039.jpg");
-adaugaPoza("img-domenii/protectii_anticorozive/PodCernavodaDSC9113.jpg");
-adaugaPoza("img-domenii/protectii_anticorozive/PodCernavodaDSC9176.jpg");
+adaugaPoza("img-domenii/protectii_anticorozive/PodCernavodaDSC_9039.JPG");
+adaugaPoza("img-domenii/protectii_anticorozive/PodCernavodaDSC_9113.JPG");
+adaugaPoza("img-domenii/protectii_anticorozive/PodCernavodaDSC_9176.JPG");
 adaugaPoza("img-domenii/protectii_anticorozive/ProtectiianticoroziveLindep8.jpg");
 
 }
 
 if(numar==6)
 {
-  lucrariReferinta+="<p>Izolații cu betoane refractare:</p>"
+  lucrariReferinta+="<p></p>"
   +"<ul>"
   +"<li>SN Nuclearelectrica, CNE Cernavodă Unitatea 1 și Unitatea 2</li>"
   +"<li>Rominserv</li>"
   +"<li>Petrotel Lukoil Ploiești</li>"
   +"</ul> "
-$("#titluLucrare").empty().append("Construcții industriale:")
+$("#titluLucrare").empty().append("Izolații cu betoane refractare:")
 
 }
 
@@ -230,24 +230,19 @@ if(numar==7)
   lucrariReferinta+="<p>Foc celulozic:</p>"
   +"<ul>"
  
-
-
-
-
-+"<li>SN Nuclearelectrica, CNE Cernavodă </li>";
-+"<li>Tribunalul Municipiului București </li>";
-+"<li>BRD Piața Victoriei </li>";
-+"<li>BRD Televiziunea București </li>";
-+"<li>Mobexpert Pipera </li>";
-+"<li>Kaufland: București, Timișoara, Satu Mare, Târgu Mures, Alba Iulia </li>";
-+"<li>Centrul Expozițional Moldova Iași </li>";
-+"<li>Real Vitan București </li>";
-+"<li>Biofuel – Fabrica de alcool Zimnicea </li>";
-+"<li>Fabrica de ulei – Dropia Zimnicea </li>";
-+"<li>Carrefour Ploiești </li>";
-+"<li>Hypermarket Cora București, Titan București </li>";
-+"<li>SN Nuclearelectrica, Fabrica de Combustibil Nuclear Pitești </li>";
-
+  +"<li>SN Nuclearelectrica, CNE Cernavodă </li>"
+  +"<li>Tribunalul Municipiului București </li>"
+  +"<li>BRD Piața Victoriei </li>"
+  +"<li>BRD Televiziunea București </li>"
+  +"<li>Mobexpert Pipera </li>"
+  +"<li>Kaufland: București, Timișoara, Satu Mare, Târgu Mures, Alba Iulia </li>"
+  +"<li>Centrul Expozițional Moldova Iași </li>"
+  +"<li>Real Vitan București </li>"
+  +"<li>Biofuel – Fabrica de alcool Zimnicea </li>"
+  +"<li>Fabrica de ulei – Dropia Zimnicea </li>"
+  +"<li>Carrefour Ploiești </li>"
+  +"<li>Hypermarket Cora București, Titan București </li>"
+  +"<li>SN Nuclearelectrica, Fabrica de Combustibil Nuclear Pitești </li>"
 
   +"</ul> "
   
@@ -326,9 +321,8 @@ $("#titluLucrare").empty().append("Lucrări speciale:")
 $(document).ready(function () {
   //pozaCertificate();
   changeLanguage(1);
-
-
-
+  changeLucrariReferinta(1);
+  
   // Fetch all the details element.
 const details = document.querySelectorAll("details");
 
