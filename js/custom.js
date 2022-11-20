@@ -65,24 +65,21 @@ function pozaCertificate()
     }
 }
 
-function deschidePozaFullscreen(path)
-{
-  //$("#poza_fs").empty().append('<img src="'+path+'"/>')
-  $('#poza_fs').magnificPopup({type:'image'});
-
-}
 
 function adaugaPoza(path)
 {
   $(".containerGalerie").append(
       '<div class="gallery">'
-      // +'<a class="poza_fs" onclick="deschidePozaFullscreen(\''+path+'\')">'
       +'<a class="poza_fs" href="'+path+'")>'
-
        +'<img src="thb-'+path+'" width="800" height="800">'
       +'</a>'
       +'</div>');
 } 
+
+function getPozaCurenta()
+{
+
+}
 
 function changeLucrariReferinta(numar)
 {
@@ -307,14 +304,19 @@ $("#titluLucrare").empty().append("Lucrări speciale:")
 
 }
   $("#lucrariReferinta").empty().append(lucrariReferinta);
-  $('.poza_fs').magnificPopup({type:'image'});
-
-
-
   
+  $('.poza_fs').magnificPopup({
+    // main options
+    disableOn: 400,
+  
+    gallery: {
+      enabled: true
+    },
+    type:'image'
+  
+  });
 
 }
-
 
 
 

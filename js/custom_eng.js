@@ -308,7 +308,16 @@ $("#titluLucrare").empty().append("Special works:")
 
 }
   $("#lucrariReferinta").empty().append(lucrariReferinta);
-  $('.poza_fs').magnificPopup({type:'image'});
+  $('.poza_fs').magnificPopup({
+    // main options
+    disableOn: 400,
+  
+    gallery: {
+      enabled: true
+    },
+    type:'image'
+  
+  });
 
 
 
