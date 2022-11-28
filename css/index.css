@@ -250,7 +250,7 @@ strong {
 
 .navbar .custom-btn {
   background: transparent;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
   border-color: var(--secondary-color);
   color: var(--secondary-color);
@@ -271,11 +271,7 @@ strong {
   padding: 12px 24px;
 }
 
-.custom-btn:hover {
-  background: var(--primary-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
-  color: var(--secondary-color);
-}
+
 
 .custom-border-btn {
   background: transparent;
@@ -327,7 +323,7 @@ strong {
   color: var(--secondary-color);
 }
 
-.is-sticky .navbar .custom-btn:hover {
+.navbar .custom-btn:hover {
   background: var(--secondary-color);
   color: var(--white-color);
 }
@@ -883,10 +879,22 @@ strong {
   SITE FOOTER              
 -----------------------------------------*/
 .site-footer {
-  border-top: 1px solid var(--border-color);
-  padding-top: 50px;
-  padding-bottom: 50px;
-  text-align: center;
+    background: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding:2vh 10vw 9vh 10vw;
+    height: 10vh;  
+    width: 100vw;
+  border-top: 1px solid var(--secondary-color);
+}
+
+.site-footer h3{
+  font-size:1.5rem;
+}
+
+.site-footer h3 a img{
+  width:15vw;
 }
 
 .site-footer-title {
@@ -1183,13 +1191,13 @@ strong {
     min-width: inherit;
   }
 
+  
 }
 
 #logo_svg
 {
-  width: 10rem;
+  width: 12rem;
 }
-
 
 #certificat{
   width:10rem;
@@ -1250,6 +1258,8 @@ border-radius: 10px;
 }
 
 @media screen and (max-width: 768px) {
+
+
   #hartaGoogle
   {
     width:80vw;
@@ -1269,8 +1279,9 @@ border-radius: 10px;
 
   #logo_svg
   {
-    width: 30%;
-    height: 30%;
+    width: 40%;
+    height: 40%;
+    padding-left:1.6rem;
   }
 
   .hero svg {
@@ -1470,11 +1481,66 @@ div.desc {
 }
 
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 991px) {
 
+  #NavBAR #logo_svg
+  {
+    margin-right:25vw;
+  }
   .nav-item-lang
   {
     margin-left:0vw;
     margin-top:1vh;
   }
+  .site-footer {
+    background: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding:1.5vh 10vw 2vh 10vw;
+    height: 10vh;  
+    width: 100vw;
+}
+
+.site-footer h3{
+  font-size:1rem;
+}
+
+.site-footer h3 a img{
+  width:35vw;
+}
+
+
+
+
+}
+
+
+
+
+
+.lang
+{
+  width: 1000px;
+}
+
+
+@media only screen and (min-width: 990px) {
+
+  #navbarNav
+  {
+    padding-left:8vw;
+    padding-right:1vw;
+  }
+
+  #NavBAR #logo_svg
+{
+  margin-right:0vw;
+}
+
+
+}
+
+.nav-item .nav-link{
+  font-size:1rem;
 }

@@ -76,10 +76,6 @@ function adaugaPoza(path)
       +'</div>');
 } 
 
-function getPozaCurenta()
-{
-
-}
 
 function changeLucrariReferinta(numar)
 {
@@ -320,8 +316,10 @@ $("#titluLucrare").empty().append("Lucrări speciale:")
 
 
 
+
+
 $(document).ready(function () {
-  //pozaCertificate();
+  pozaCertificate();
   changeLanguage(1);
   changeLucrariReferinta(1);
   

@@ -54,17 +54,6 @@ function changeLanguage(numar_limba)
       
 }
 
-function pozaCertificate()
-{
-    if(screen.height>screen.width)
-    {
-      $('#certificate_poza').empty().append('<img src="images/cert/cert_mobile.png" style="width: 90%;margin-left:1rem;"/>');
-    }
-    else{
-      $('#certificate_poza').empty().append('<img src="images/cert/cert.png" style="width: 90%;margin-left:4rem;"/>');
-    }
-}
-
 function deschidePozaFullscreen(path)
 {
   //$("#poza_fs").empty().append('<img src="'+path+'"/>')
@@ -329,7 +318,6 @@ $("#titluLucrare").empty().append("Special works:")
 
 
 $(document).ready(function () {
-  //pozaCertificate();
   changeLanguage(2);
   changeLucrariReferinta(1);
   
