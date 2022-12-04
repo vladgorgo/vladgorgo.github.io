@@ -335,12 +335,11 @@ strong {
   right: 0;
   left: 0;
   transition: all 0.3s;
-  padding-top: 15px;
+  padding-top: 0px;
   padding-bottom: 0;
 }
 
 .navbar .container {
-  border-radius: var(--border-radius-small);
   padding: 10px 25px;
 }
 
@@ -501,7 +500,6 @@ strong {
 }
 
 .hero-image-wrap {
-  background: var(--white-color);
   border-radius: 100%;
   width: 350px;
   height: 350px;
@@ -517,9 +515,10 @@ strong {
 .hero-image {
   position: absolute;
   z-index: 22;
-  top: 0;
-  width: 100%;
-  min-width: 550px;
+  top:3rem;
+}
+.hero-image img{
+  width: 40rem;;
 }
 
 .hero svg {
@@ -609,7 +608,7 @@ strong {
 
 .grup {
 
-  max-width: 16rem;
+  max-width: 13rem;
   margin-left: 2rem;
 
 }
@@ -1140,13 +1139,7 @@ strong {
   }
 }
 
-@media screen and (max-width: 575px) {
-  .navbar .container {
-    margin-right: 12px;
-    margin-left: 12px;
 
-  }
-}
 
 @media screen and (max-width: 480px) {
   h1 {
@@ -1196,11 +1189,12 @@ strong {
 
 #logo_svg
 {
-  width: 12rem;
+  width: 14rem;
 }
 
 #certificat{
   width:10rem;
+  color:#0a008f;
 }
 
 #elementListaDomenii1,#elementListaDomenii2,#elementListaDomenii3
@@ -1544,3 +1538,41 @@ div.desc {
 .nav-item .nav-link{
   font-size:1rem;
 }
+
+
+
+.tab
+{
+  margin-left:1.2 rem;
+}
+
+
+#navbarLang
+{
+  margin-left:1.3rem;
+}
+
+
+.containernavbar
+{
+  max-width: 100vw !important;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 780px) {
+
+  .navbar .container
+  {
+    padding-left:12%;
+  }
+  .fa-file
+  {
+    margin-left:1.2rem;
+  }
+}
+
+
