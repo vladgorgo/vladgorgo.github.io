@@ -223,13 +223,13 @@ if(numar==5)
 
 $("#titluLucrare").empty().append("Protecții anti-corozive:")
 
-adaugaPoza("img-domenii/6_protectii_anticorozive/1_protectii anticorozive.JPG");
+adaugaPoza("img-domenii/6_protectii_anticorozive/1_protectii anticorozive.jpg");
 adaugaPoza("img-domenii/6_protectii_anticorozive/2_protectii anticorozive nuclear.jpg");
 adaugaPoza("img-domenii/6_protectii_anticorozive/3_protectii anticorozive.jpg");
 adaugaPoza("img-domenii/6_protectii_anticorozive/4_protectii anticorozive nuclear.jpg");
-adaugaPoza("img-domenii/6_protectii_anticorozive/5_protectii anticorozive.JPG");
+adaugaPoza("img-domenii/6_protectii_anticorozive/5_protectii anticorozive.jpg");
 adaugaPoza("img-domenii/6_protectii_anticorozive/6_protectii anticorozive nuclear.jpg");
-adaugaPoza("img-domenii/6_protectii_anticorozive/7_protectii anticorozive.JPG");
+adaugaPoza("img-domenii/6_protectii_anticorozive/7_protectii anticorozive.jpg");
 
 
 
