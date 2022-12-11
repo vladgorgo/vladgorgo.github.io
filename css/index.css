@@ -1590,12 +1590,6 @@ div.desc {
 
 #section_5
 {
-  padding-bottom:1.2rem;
+  padding-bottom:3.6rem;
 }
 
-@media only screen and (max-width: 900px) {
-#section_5
-{
-  padding-bottom:2.8rem !important;
-}
-}

@@ -97,12 +97,22 @@ if(numar==1)
 
 $("#titluLucrare").empty().append("Industrial constructions:");
 
-adaugaPoza("img-domenii/constructii/constructiiEFFCVS.jpg");
-adaugaPoza("img-domenii/constructii/constructiiCorbu2.jpg");
-adaugaPoza("img-domenii/constructii/Socep 20221026_172828.jpg");
-adaugaPoza("img-domenii/constructii/StatiadetratareFabricadeUleip12.jpg");
-adaugaPoza("img-domenii/constructii/StatiedetratareFabricadeUlei 11.jpg");
-
+adaugaPoza("img-domenii/1_constructii/1_constructii.jpg");
+adaugaPoza("img-domenii/1_constructii/2_constructii.jpg");
+adaugaPoza("img-domenii/1_constructii/3_constructii nuclear.jpg");
+adaugaPoza("img-domenii/1_constructii/4_constructii.jpg");
+adaugaPoza("img-domenii/1_constructii/5_constructii.jpg");
+adaugaPoza("img-domenii/1_constructii/6_constructii.jpg");
+adaugaPoza("img-domenii/1_constructii/7_constructii.jpg");
+adaugaPoza("img-domenii/1_constructii/8_constructii.jpg");
+adaugaPoza("img-domenii/1_constructii/9_constructii.jpg");
+adaugaPoza("img-domenii/1_constructii/10_constructii.jpg");
+adaugaPoza("img-domenii/1_constructii/11_constructii.jpg");
+adaugaPoza("img-domenii/1_constructii/12_constructii.jpg");
+adaugaPoza("img-domenii/1_constructii/13_constructii.jpg");
+adaugaPoza("img-domenii/1_constructii/14_constructii.jpg");
+adaugaPoza("img-domenii/1_constructii/15_constructii.jpg");
+adaugaPoza("img-domenii/1_constructii/16_constructii.jpg");
 
 }
 
@@ -115,10 +125,13 @@ if(numar==2)
   +"</ul>"
   $("#titluLucrare").empty().append("Consolidation of structures in construction:")
   
-  adaugaPoza("img-domenii/consolidari_structuri/Chimpex20221027_103314.jpg");
-  adaugaPoza("img-domenii/consolidari_structuri/ConsolidarerezervorMidia20180519_100519.jpg");
-  adaugaPoza("img-domenii/consolidari_structuri/ConsolidarerezervorMidia20180512_093045.jpg");
-  adaugaPoza("img-domenii/consolidari_structuri/ConsolidareRezervorMidia20180512_130426.jpg");
+  adaugaPoza("img-domenii/2_consolidari_structuri/1_consolidari structuri.jpg");
+  adaugaPoza("img-domenii/2_consolidari_structuri/2_consolidari structuri.jpg");
+  adaugaPoza("img-domenii/2_consolidari_structuri/3_consolidari structuri.jpg");
+  adaugaPoza("img-domenii/2_consolidari_structuri/4_consolidari structuri.jpg");
+  adaugaPoza("img-domenii/2_consolidari_structuri/5_consolidari structuri.jpg");
+  adaugaPoza("img-domenii/2_consolidari_structuri/6_consolidari structuri.jpg");
+  adaugaPoza("img-domenii/2_consolidari_structuri/7_consolidari structuri.jpg");
 
 
 }
@@ -140,21 +153,22 @@ if(numar==3)
   +"</ul>"
   $("#titluLucrare").empty().append("Thermal insulation:")
 
-  adaugaPoza("img-domenii/termoizolatii/IzolatiireciLinde1.jpg");
-  adaugaPoza("img-domenii/termoizolatii/IzolatiireciLindep23.jpg");
-  adaugaPoza("img-domenii/termoizolatii/IzolatiireciLindep24.jpg");
-  adaugaPoza("img-domenii/termoizolatii/IzolatiireciLindep25.jpg");
-  adaugaPoza("img-domenii/termoizolatii/IzolatiitermicecaldeMidia1.jpg");
-  adaugaPoza("img-domenii/termoizolatii/IzolatiitermicecaldeMidia2.jpg");
-  adaugaPoza("img-domenii/termoizolatii/IzolatiitermicecaldeMidia3.jpg");
-  adaugaPoza("img-domenii/termoizolatii/IzolatiitermicecaldeMidiap81.jpg");
-  adaugaPoza("img-domenii/termoizolatii/IzolatiitermicecaldeRompetrol.jpg");
-  adaugaPoza("img-domenii/termoizolatii/IzolatiitermicecaldeRompetrolMidiap27.jpg");
-  adaugaPoza("img-domenii/termoizolatii/IzolatiitermiceSNN3.jpg");
-  adaugaPoza("img-domenii/termoizolatii/TermoizolatiiCNEp19.jpg");
-  adaugaPoza("img-domenii/termoizolatii/TermoizolatiiCNEp20.jpg");
-  adaugaPoza("img-domenii/termoizolatii/TermoizolatiiCNEp21.jpg");
-  adaugaPoza("img-domenii/termoizolatii/TermoizolatiiCNEp22.jpg");
+  adaugaPoza("img-domenii/3_termoizolatii/1_termoizolatii calde.jpg");
+  adaugaPoza("img-domenii/3_termoizolatii/2_termoizolatii reci.jpg");
+  adaugaPoza("img-domenii/3_termoizolatii/3_termoizolatii nuclear.jpg");
+  adaugaPoza("img-domenii/3_termoizolatii/4_termoizolatii reci.jpg");
+  adaugaPoza("img-domenii/3_termoizolatii/5_termoizolatii calde.jpg");
+  adaugaPoza("img-domenii/3_termoizolatii/6_termoizolatii nuclear.jpg");
+  adaugaPoza("img-domenii/3_termoizolatii/7_termoizolatii reci.jpg");
+  adaugaPoza("img-domenii/3_termoizolatii/8_termoizolatii calde.jpg");
+  adaugaPoza("img-domenii/3_termoizolatii/9_termoizolatii nuclear.jpg");
+  adaugaPoza("img-domenii/3_termoizolatii/10_termoizolatii calde.jpg");
+  adaugaPoza("img-domenii/3_termoizolatii/11_termoizolatii nuclear.jpg");
+  adaugaPoza("img-domenii/3_termoizolatii/12_termoizolatii.jpg");
+  adaugaPoza("img-domenii/3_termoizolatii/13_termoizolatii reci.jpg");
+  adaugaPoza("img-domenii/3_termoizolatii/14_termoizolatii calde.jpg");
+  adaugaPoza("img-domenii/3_termoizolatii/15_termoizolatii calde.jpg");
+  adaugaPoza("img-domenii/3_termoizolatii/16_termoizolatii nuclear.jpg");
 
 
 }
@@ -166,15 +180,19 @@ if(numar==4)
   +"</ul>"
 
   $("#titluLucrare").empty().append("Closing structures with sandwich panels:")
-  adaugaPoza("img-domenii/inchideri_panouri_sandwich/CNErompan.jpg");
-  adaugaPoza("img-domenii/inchideri_panouri_sandwich/Seiru20181113_143250.jpg");
-  adaugaPoza("img-domenii/inchideri_panouri_sandwich/SeiruIMG20221031WA0004.jpg");
-  adaugaPoza("img-domenii/inchideri_panouri_sandwich/SeiruIMG20221031WA0006.jpg");
-  adaugaPoza("img-domenii/inchideri_panouri_sandwich/SeiruIMG20221031WA000708.jpg");
-  adaugaPoza("img-domenii/inchideri_panouri_sandwich/SeiruIMG20221031WA0008.jpg");
-  adaugaPoza("img-domenii/inchideri_panouri_sandwich/SeiruIMG2022103WA0002.jpg");
-  adaugaPoza("img-domenii/inchideri_panouri_sandwich/SeiruIMG2022103WA0007.jpg");
-  adaugaPoza("img-domenii/inchideri_panouri_sandwich/SeiruIMG2022103WA0011.jpg");
+
+  adaugaPoza("img-domenii/4_inchideri_panouri_sandwich/1_inchideri panouri sandwich.jpg");
+  adaugaPoza("img-domenii/4_inchideri_panouri_sandwich/2_inchideri panouri sandwich.jpg");
+  adaugaPoza("img-domenii/4_inchideri_panouri_sandwich/3_inchideri panouri sandwich.jpg");
+  adaugaPoza("img-domenii/4_inchideri_panouri_sandwich/4_inchideri panouri sandwich.jpg");
+  adaugaPoza("img-domenii/4_inchideri_panouri_sandwich/5_inchideri panouri sandwich.jpg");
+  adaugaPoza("img-domenii/4_inchideri_panouri_sandwich/6_inchideri panouri sandwich.jpg");
+  adaugaPoza("img-domenii/4_inchideri_panouri_sandwich/7_panouri sandwich.jpg");
+  adaugaPoza("img-domenii/4_inchideri_panouri_sandwich/8_inchideri panouri sandwich.jpg");
+  adaugaPoza("img-domenii/4_inchideri_panouri_sandwich/9_inchideri panouri sandwich.jpg");
+  adaugaPoza("img-domenii/4_inchideri_panouri_sandwich/10_inchideri panouri sandwich.jpg");
+  adaugaPoza("img-domenii/4_inchideri_panouri_sandwich/11_inchideri panouri sandwich.jpg");
+  adaugaPoza("img-domenii/4_inchideri_panouri_sandwich/12_inchideri panouri sandwich.jpg");
   
 }
 if(numar==5)
@@ -192,13 +210,15 @@ if(numar==5)
 +"</ul> "
 
 $("#titluLucrare").empty().append("Anti-corrosive protections:")
-adaugaPoza("img-domenii/protectii_anticorozive/p1protectiianticorozivenuclear.jpg");
-adaugaPoza("img-domenii/protectii_anticorozive/p2protectiianticorozivenuclear.jpg");
-adaugaPoza("img-domenii/protectii_anticorozive/p5bcaptuseliepoxinuclear.jpg");
-adaugaPoza("img-domenii/protectii_anticorozive/PodCernavodaDSC_9039.JPG");
-adaugaPoza("img-domenii/protectii_anticorozive/PodCernavodaDSC_9113.JPG");
-adaugaPoza("img-domenii/protectii_anticorozive/PodCernavodaDSC_9176.JPG");
-adaugaPoza("img-domenii/protectii_anticorozive/ProtectiianticoroziveLindep8.jpg");
+
+adaugaPoza("img-domenii/6_protectii_anticorozive/1_protectii anticorozive.jpg");
+adaugaPoza("img-domenii/6_protectii_anticorozive/2_protectii anticorozive nuclear.jpg");
+adaugaPoza("img-domenii/6_protectii_anticorozive/3_protectii anticorozive.jpg");
+adaugaPoza("img-domenii/6_protectii_anticorozive/4_protectii anticorozive nuclear.jpg");
+adaugaPoza("img-domenii/6_protectii_anticorozive/5_protectii anticorozive.jpg");
+adaugaPoza("img-domenii/6_protectii_anticorozive/6_protectii anticorozive nuclear.jpg");
+adaugaPoza("img-domenii/6_protectii_anticorozive/7_protectii anticorozive.jpg");
+
 
 }
 
@@ -212,6 +232,10 @@ if(numar==6)
   +"</ul> "
 $("#titluLucrare").empty().append("Refractory concrete insulation:")
 
+adaugaPoza("img-domenii/5_izolatii_betoane_refractare/1_izolatii betoane refractare.jpg");
+adaugaPoza("img-domenii/5_izolatii_betoane_refractare/2_izolatii betoane refractare.jpg");
+adaugaPoza("img-domenii/5_izolatii_betoane_refractare/3_izolatii betoane refractare.jpg");
+adaugaPoza("img-domenii/5_izolatii_betoane_refractare/4_izolatii betoane refractare.jpg");
 }
 
 if(numar==7)
@@ -247,9 +271,18 @@ if(numar==7)
 
 
 $("#titluLucrare").empty().append("Fire protection:")
-adaugaPoza("img-domenii/protectii_foc/ProtectiefocMidia1.jpg");
-adaugaPoza("img-domenii/protectii_foc/ProtectiefocMidia2.jpg");
-adaugaPoza("img-domenii/protectii_foc/ProtectiefocMidiap62.jpg");
+
+adaugaPoza("img-domenii/7_protectii_foc/1_protectie foc hidrocarburi.jpg");
+adaugaPoza("img-domenii/7_protectii_foc/2_protectie foc.jpg");
+adaugaPoza("img-domenii/7_protectii_foc/3_protectie foc hidrocarburi.jpg");
+adaugaPoza("img-domenii/7_protectii_foc/4_protectie foc hidrocarburi.jpg");
+adaugaPoza("img-domenii/7_protectii_foc/5_protectie foc.jpg");
+adaugaPoza("img-domenii/7_protectii_foc/6_protectie foc hidrocarburi.jpg");
+adaugaPoza("img-domenii/7_protectii_foc/7_protectie foc.jpg");
+adaugaPoza("img-domenii/7_protectii_foc/8_protectie foc hidrocarburi.jpg");
+adaugaPoza("img-domenii/7_protectii_foc/9_protectie foc.jpg");
+adaugaPoza("img-domenii/7_protectii_foc/10_protectie foc.jpg");
+adaugaPoza("img-domenii/7_protectii_foc/11_protectie foc hidrocarburi.jpg");
 
 
 }
@@ -268,10 +301,12 @@ if(numar==8)
   +"</ul> "
 
 
-adaugaPoza("img-domenii/termohidroizolatii/Hidroizolatiip1.jpg");
-adaugaPoza("img-domenii/termohidroizolatii/Hidroizolatiip2.jpg");
-adaugaPoza("img-domenii/termohidroizolatii/Hidroizolatiip3.jpg");
-adaugaPoza("img-domenii/termohidroizolatii/Hidroizolatiip4.jpg");
+  adaugaPoza("img-domenii/8_termohidroizolatii/1_termohidroizolatii.jpg");
+  adaugaPoza("img-domenii/8_termohidroizolatii/2_termohidroizolatii.jpg");
+  adaugaPoza("img-domenii/8_termohidroizolatii/3_termohidroizolatii.jpg");
+  adaugaPoza("img-domenii/8_termohidroizolatii/4_termohidroizolatii.jpg");
+  adaugaPoza("img-domenii/8_termohidroizolatii/5_termohidroizolatii.jpg");
+  adaugaPoza("img-domenii/8_termohidroizolatii/6_termohidroizolatii.jpg");
 
 
 $("#titluLucrare").empty().append("Thermo-hydro insulations:")
