@@ -608,7 +608,7 @@ strong {
 
 .grup {
 
-  max-width: 13rem;
+  max-width: 12rem;
   margin-left: 2rem;
 
 }
@@ -1194,7 +1194,7 @@ strong {
 
 #certificat{
   width:10rem;
-  color:#0a008f;
+  color:#040042;
 }
 
 #elementListaDomenii1,#elementListaDomenii2,#elementListaDomenii3
@@ -1491,7 +1491,7 @@ div.desc {
     position: fixed;
     left: 0;
     bottom: 0;
-    padding:1.5vh 10vw 2vh 10vw;
+    padding:1.5vh 10vw 10vh 10vw;
     height: 10vh;  
     width: 100vw;
 }
@@ -1549,7 +1549,11 @@ div.desc {
 
 #navbarLang
 {
-  margin-left:1.3rem;
+  /* margin-left:1.3rem; */
+  margin-left: auto;
+  margin-right:0px;
+  padding-right: 1.5rem;
+  font-size:1.2rem;
 }
 
 
@@ -1576,3 +1580,22 @@ div.desc {
 }
 
 
+.poweredBy
+{
+  margin-top:0.5rem;
+  padding-bottom:0.5rem;
+  background-color: #535da1;
+  padding-top:0.5rem;
+}
+
+#section_5
+{
+  padding-bottom:1.2rem;
+}
+
+@media only screen and (max-width: 900px) {
+#section_5
+{
+  padding-bottom:2.8rem !important;
+}
+}
