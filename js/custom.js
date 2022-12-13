@@ -93,11 +93,10 @@ if(numar==1)
   +"<p>Nuclear:</p>"
   +"<ul>"
 
-  +"<li>SN Nuclearelectrica, CNE Cernavodă - EFCVS</li>";
-  +"<li>SN Nuclearelectrica, CNE Cernavodă - extindere BCU</li>";
-  +"<li>SN Nuclearelectrica, CNE Cernavodă - Seiru</li>";
-
-+"</ul> "
+  +"<li>SN Nuclearelectrica, CNE Cernavodă - EFCVS</li>"
+  +"<li>SN Nuclearelectrica, CNE Cernavodă - extindere BCU</li>"
+  +"<li>SN Nuclearelectrica, CNE Cernavodă - Seiru</li>"
+  +"</ul> ";
 
 $("#titluLucrare").empty().append("Construcții industriale:");
 
@@ -129,7 +128,7 @@ if(numar==2)
   +"<li>Consolidare hotel Astoria – Eforie Nord, hotel Europa – Eforie Nord; hotel Carmen – Venus; </li>"
   +"<li>Consolidare siloz fosforita CHIMPEX Port Constanța</li>"
   +"<li>Consolidare rezervor Rompetrol MIDIA</li>"
-  +"</ul>"
+  +"</ul>";
   $("#titluLucrare").empty().append("Consolidări de structuri în construcții:")
   
 
@@ -158,7 +157,7 @@ if(numar==3)
   +"<li>Rompetrol </li>"
   +"<li>Linde Galați</li>"
   +"</ul>"
-  +"</ul>"
+  +"</ul>";
   $("#titluLucrare").empty().append("Termoizolații:")
 
 
@@ -187,7 +186,7 @@ if(numar==4)
   lucrariReferinta+="<ul>"
   +"<li>SN Nuclearelectrica, CNE Cernavodă Unitatea 1 și Unitatea 2</li>"
   +"<li>SN Nuclearelectrica, CNE Cernavodă Seiru</li>"
-  +"</ul>"
+  +"</ul>";
 
   $("#titluLucrare").empty().append("Închideri cu panouri sandwich:")
 
@@ -219,7 +218,7 @@ if(numar==5)
   +"<ul>"
   +"<li>SN Nuclearelectrica, CNE Cernavodă Unitatea 1 și Unitatea 2 – Captușeli epoxidice / poliuretanice decontaminabile</li>"
   +"<li>Fabrica de Combustibil Nuclear Pitești - Căptușeli epoxidice / poliuretanice decontaminabile</li>"
-+"</ul> "
++"</ul> ";
 
 $("#titluLucrare").empty().append("Protecții anti-corozive:")
 
@@ -242,7 +241,7 @@ if(numar==6)
   +"<li>SN Nuclearelectrica, CNE Cernavodă Unitatea 1 și Unitatea 2</li>"
   +"<li>Rominserv</li>"
   +"<li>Petrotel Lukoil Ploiești</li>"
-  +"</ul> "
+  +"</ul> ";
 $("#titluLucrare").empty().append("Izolații cu betoane refractare:")
 
 
@@ -280,7 +279,7 @@ if(numar==7)
   +"<li>Petrotel Lukoil Ploiești</li>"
   +"<li>Combinatul Petrochimic Pitești</li>"
 
-+"</ul> "
++"</ul> ";
 
 
 
@@ -305,14 +304,14 @@ if(numar==8)
 {
   lucrariReferinta+="<p></p>"
   +"<ul>"
-  +"<li>SN Nuclearelectrica, CNE Cernavodă (domeniul Nuclear)</li>";
-  +"<li>CHIMPEX, Port Constanța (domeniul Civil)</li>";
-  +"<li>SOCEP, Port Constanța (domeniul Civil)</li>";
+  +"<li>SN Nuclearelectrica, CNE Cernavodă (domeniul Nuclear)</li>"
+  +"<li>CHIMPEX, Port Constanța (domeniul Civil)</li>"
+  +"<li>SOCEP, Port Constanța (domeniul Civil)</li>"
 
 
 
 
-  +"</ul> "
+  +"</ul> ";
 
 
 

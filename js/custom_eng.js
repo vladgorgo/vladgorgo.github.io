@@ -89,9 +89,9 @@ if(numar==1)
   +"<p>Nuclear:</p>"
   +"<ul>"
 
-  +"<li>SN Nuclearelectrica, Nuclear Power Plant Cernavodă – EFCVS </li>";
-  +"<li>SN Nuclearelectrica, Nuclear Power Plant Cernavodă – extension BCU</li>";
-  +"<li>SN Nuclearelectrica, Nuclear Power Plant Cernavodă – Seiru</li>";
+  +"<li>SN Nuclearelectrica, Nuclear Power Plant Cernavodă – EFCVS </li>"
+  +"<li>SN Nuclearelectrica, Nuclear Power Plant Cernavodă – extension BCU</li>"
+  +"<li>SN Nuclearelectrica, Nuclear Power Plant Cernavodă – Seiru</li>"
 
 +"</ul> "
 
@@ -291,13 +291,9 @@ if(numar==8)
 {
   lucrariReferinta+="<p></p>"
   +"<ul>"
-  +"<li>SN Nuclearelectrica, Nuclear Power Plant Cernavodă (Nuclear field)</li>";
-  +"<li>CHIMPEX, Port of Constanța (Civil field)</li>";
-  +"<li>SOCEP, Port of Constanța (Civil field)</li>";
-
-
-
-
+  +"<li>SN Nuclearelectrica, Nuclear Power Plant Cernavodă (Nuclear field)</li>"
+  +"<li>CHIMPEX, Port of Constanța (Civil field)</li>"
+  +"<li>SOCEP, Port of Constanța (Civil field)</li>"
   +"</ul> "
 
 
