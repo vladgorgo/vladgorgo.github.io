@@ -1579,6 +1579,14 @@ div.desc {
   }
 }
 
+@media only screen and (max-width: 780px) {
+
+  
+  .fa-file
+  {
+    margin-left:0.8rem;
+  }
+}
 
 .poweredBy
 {
