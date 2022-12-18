@@ -1273,9 +1273,10 @@ border-radius: 10px;
 
   #logo_svg
   {
-    width: 40%;
-    height: 40%;
-    padding-left:1.6rem;
+    width: 50%;
+    height: 50%;
+    padding-left:1.8rem;
+    padding-bottom: 1rem;;
   }
 
   .hero svg {
@@ -1291,7 +1292,7 @@ border-radius: 10px;
   .grup
   {
     margin-left: 2rem;
-    width: 16rem;
+    width: 10rem;
   }
 
   #motto1,#motto2
@@ -1579,14 +1580,6 @@ div.desc {
   }
 }
 
-@media only screen and (max-width: 780px) {
-
-  
-  .fa-file
-  {
-    margin-left:0.8rem;
-  }
-}
 
 .poweredBy
 {
