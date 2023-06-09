@@ -1,0 +1,70 @@
+.meniu
+{
+    background-color: rgb(240, 240, 240);
+    border-radius: 1rem;
+    margin:1rem 0.5rem;
+    padding-bottom:1rem;
+}
+.cardLogo
+{
+    height:15rem;
+    background-color: rgb(240, 240, 240);
+    border-radius: 1rem;
+    margin:1rem 0.5rem;
+}
+
+.cardAlergeni
+{
+    background-color: rgb(240, 240, 240);
+    border-radius: 1rem;
+    margin:1rem 0.5rem;
+    padding:2rem;
+    font-size:0.9rem;
+}
+
+
+.cardProdus
+{
+    margin:1rem;
+    padding-top: 1rem;
+    border-bottom-color: black;
+    border-bottom: 0.2rem;
+    border-style: ridge;
+}
+
+.categorie
+{
+    font-size:1.25rem;
+    padding:2rem 0rem 0rem 1rem;
+
+    
+}
+
+img
+{
+    margin:auto;
+    width:10rem;
+}
+
+
+.butCategorii a{
+
+    color:white;
+
+    display: inline-block;
+    padding: 0 25px;
+    font-size: 16px;
+    line-height: 25px;
+    border-radius: 25px;
+    background-color: rgb(94, 94, 94);
+}
+
+ol
+{
+    list-style:block !important;
+    margin:2.2rem !important;
+}
+.hidden
+{
+    display: none;
+}

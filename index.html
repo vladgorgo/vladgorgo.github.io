@@ -1,477 +1,55 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-        <meta name="description" content="">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Baba Doner</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <script src='scripts.js'></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 
-        <title>STIZO Nuclear</title>
-        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body class="bg-green-700">
+<div class="cardLogo">
+    <img src="images/logo-BD.png">
+    <h1 style="text-align: center;font-size:20px;"><b>Baba Döner</b></h1>
+</div>
 
-        <!-- CSS FILES -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
-
-        <link href="css/magnific-popup.css" rel="stylesheet">
-
-        <link href="css/index.css" rel="stylesheet">
-
-        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
-
-        <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.sticky.js"></script>
-        <script src="js/click-scroll.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/magnific-popup-options.js"></script>
-        <script src="js/custom.js"></script>
-
-        
-
-    </head>
-
-    <body>
-
-
-        <nav class="navbar navbar-expand-lg">
-            <div class="container containernavbar" id="NavBAR">
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                
-                <img id="logo_svg" src="images/logoHQ.png"></img>
-                
-
-                <!-- <svg id="logo_svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1886.81 882.15"><defs><style>.cls-1{font-size:204.2px;letter-spacing:0em;}.cls-1,.cls-6{fill:#281676;}.cls-1,.cls-3,.cls-4{font-family:TimesNewRomanPS-ItalicMT, Times New Roman;font-style:italic;}.cls-2{letter-spacing:-0.05em;}.cls-3{font-size:726px;fill:#261b63;letter-spacing:0em;}.cls-4{font-size:242.79px;letter-spacing:0em;}.cls-4,.cls-7{fill:#cc2627;}.cls-5{stroke:#000;stroke-miterlimit:10;stroke-width:13.03px;}</style></defs><text class="cls-1" transform="translate(485.75 633.51) scale(1.21 1)">UCLEAR S.A.<tspan class="cls-2"><tspan x="0" y="184.56">CERNAVODA</tspan></tspan></text><text class="cls-3" transform="translate(21.55 659.53)">N</text><text class="cls-4" transform="translate(570.58 385.72) scale(1.24 1)">STIZO</text><line class="cls-5" x1="499.03" y1="432.27" x2="1851.03" y2="432.27"/><path class="cls-6" d="M1550.43,304.54a123.14,123.14,0,0,0,10.63,25.4h217.42a123.72,123.72,0,0,0,10.64-25.4Z" transform="translate(-84.59 -50.96)"/><path class="cls-6" d="M1545.39,269.5c0,3.55.18,7.05.47,10.52h247.82c.29-3.47.47-7,.47-10.52a125,125,0,0,0-2.8-26.27H1548.2A124.3,124.3,0,0,0,1545.39,269.5Z" transform="translate(-84.59 -50.96)"/><path class="cls-6" d="M1583.28,358.85a124.26,124.26,0,0,0,173,0Z" transform="translate(-84.59 -50.96)"/><path class="cls-6" d="M1566.41,200.31a123.91,123.91,0,0,0-11,20.14h228.64a123.15,123.15,0,0,0-11-20.14Z" transform="translate(-84.59 -50.96)"/><path class="cls-6" d="M1743.93,169.65a124.37,124.37,0,0,0-148.32,0Z" transform="translate(-84.59 -50.96)"/><polygon class="cls-7" points="1704.75 0 1704.75 185.26 1594.38 185.26 1704.75 0"/></svg>   -->
-                
-                
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-lg-5" id="elementeNavbar">
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_1">Acasa</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_2">Despre</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_3">Domenii</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_4">Certificari</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_5">Contact</a>
-                        </li>
-                        
-                        
-
-                    </ul>
-
-
-
-
-                    <!-- <div class="d-lg-flex align-items-center ms-auto" id="navbarLang">
-                        <a target="_self" href="index.html"><img src="css/Steaguri/ro.svg"></img>RO</a>
-                        <a target="_self" href="english.html"><img src="css/Steaguri/gb.svg"></img>EN</a>
-                    </div> -->
-                  <div lass="d-lg-flex align-items-center ms-auto" id="navbarLang">
-                    <li class="nav-item" style="list-style-type: none;">
-                        <span class="lang">
-                            <a href="index.html" target="_self" id="lang_RO" style="cursor:pointer"><span class="fi fi-ro fis"></span> RO</a>
-                             | 
-                             <a href="english.html" target="_self" id="lang_EN"  style="cursor:pointer"> EN  <span class="fi fi-gb fis"></span></a>
-                        </span>
-                    </li>
-                </div>
-
-                </div>
-
-
-                <!-- <img id="logo_svg" src="images/VINCI-Logo.png"></img> -->
-                
-                
-            </div>
-
-        
-                <!-- <button style="border-radius:10px 0px 0px 10px;border-width:1px;border-color:lightgray; font-size:0.75rem;"><span class="fi fi-ro fis" style="border-radius:10px 10px 10px 10px;"></span> RO</button>
-                <button style="border-radius:0px 10px 10px 0px;border-width:1px;border-color:lightgray; margin-left:-6px;font-size:0.75rem;">EN <span class="fi fi-gb fis" style="border-radius:10px 10px 10px 10px;"></span> </button>
-              -->
-        </nav>
-
-        <main>
-
-            <section class="hero d-flex justify-content-center align-items-center" id="section_1">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-7 col-12">
-                            <div class="hero-text">
-                                <div class="hero-title-wrap d-flex align-items-center mb-4" id="motto1" style="color:white;font-size:1.5rem;">
-                                    Obiectivul nostru este acela de a realiza lucrări de o
-                                        calitate foarte bună, chiar la nivelul celor mai mici
-                                        detalii si implicit, de a obține aprecierea
-                                        beneficiarilor noștri
-                                </div>
-
-                                <div style="color:white;font-size: 2.5rem;" id="motto2">
-                                    <q>Oamenii se pot îndoi de ceea ce spui , dar vor crede ceea ce faci!</q>
-                                </div>
-
-                            </div>
-
-                            
-
-                        </div>
-                        
-                        <div class="col-lg-5 col-12 position-relative">
-                            <img src="images/cert/cert_mobile.png" class="hero-image img-fluid" alt="">
-                        </div>
-                        
-                    </div>
-                </div>
-                <svg height='5rem' width='100vw'>
-                  <rect  height='10rem' width='100vw' style='fill:rgb(255, 255, 255);'></rect>
-               </svg>
-            </section>
-
-
+<div class="cardAlergeni">
+    <div style="border-bottom-color: black; border-bottom: 0.2rem; border-style: ridge;"  onclick="toggleParagraph()">
+        <div style="position:absolute;right: 3rem;font-size:1.2rem;">⯆</div>
+        <h2  style="font-size:1.6rem"><b>Alergeni</b></h2> 
+    </div>
+    <div id="paragraph" class="hidden" style="padding-top:1rem;">
+        <p>Conform Directivei 2000/13/CE a Parlamentului European si a Consiliului din 20 Martie 2000 alergenii din alimente se pot incadra in urmatoarele grupe:</p>
+        <ol type="1">
+            <li>Cereale care contin gluten (grau, secara, orz, ovaz, grau spelt, grau mare sau hibrizi ai acestora) si produse derivate;</li>
+            <li>Crustacee si produse derivate;</li>
+            <li>Oua si produse derivate;</li>
+            <li>Peste si produse derivate;</li>
+            <li>Arahide si produse derivate;</li>
+            <li>Soia si produse derivate;</li>
+            <li>Lapte si produse derivate;</li>
+            <li>Fructe cu coaja, adica migdale, alune de padure, nuci, anacarde (Anacardium Occidentale), nuci Pecan, nuci de Brazilia, fistic, nuci de Macadamia si nuci de Queesland si produse derivate;</li>
+            <li>Telina si produse derivate;</li>
+            <li> Mustar si produse derivate;</li>
+            <li> Seminte de susan si produse derivate;</li>
+            <li> Dioxid de sulf si sulfiti in concentratii de peste 10mg/kg sau 10mg/litru;</li>
+            <li> Lupin si produse derivate</li>
+            <li> Moluste si produse derivate.</li>
             
-
-            <!-- <section class="featured section-padding">
-                
-            </section> -->
-            <section class="about section-padding" id="section_2">
-                <div class="container">
-                    <div class="row">
-                        
-                        <!-- <div class="col-lg-12 col-12" style="padding-bottom:120px">
-                            <div class="row">
-                                <h3 class="text-center mb-5">Companie membra a grupului
-                                    <a href="https://www.vinci-energies.ro/ro/" target="_blank" ><img src="images/VINCI-Logo.png" class="grup"></a>
-                                </h3>
-                            </div>
-                        </div> -->
-
-                        <div class="col-lg-6 col-12">
-                            <img src="images/About.png" class="about-image img-fluid" alt="">
-                        </div>
-
-                        <div class="col-lg-6 col-12 mt-5 mt-lg-0">
-                            <div class="about-thumb">
-
-                                <div class="section-title-wrap d-flex justify-content-end align-items-center mb-4">
-                                    <h2 class="text-white me-4 mb-0">Despre Noi</h2>
-                                </div>
-
-                                <!-- <h2 class="pt-2 mb-3" style="font-size:2rem;">SC STIZO NUCLEAR SA Cernavoda</h2> -->
-
-                                <p><b>S.C. STIZO Nuclear S.A. Cernavodă</b> a luat ființă prin reorganizarea <b>Trustului de Lucrări Speciale și Izolații Tehnologice (TLSIT) </b>
-                                    și este o societate cu profil de execuție a lucrărilor în construcții, având un colectiv de profesioniști cu experiență și reputație 
-                                    în domeniile în care își desfașoară activitatea. Onorarea cu promptitudine și corectitudine a obligațiilor contractuale dar și încadrarea 
-                                    în termenele și bugetele lucrărilor fac din societatea noastră un partener serios și performant, capabil de a duce la bun sfârșit proiecte 
-                                    complexe, atât printr-o coordonare riguroasă a lucrărilor, cât și prin execuția acestora la un nivel ridicat de calitate.
-                                </p>
-                                    <p><b>S.C. STIZO NUCLEAR S.A.</b> este o companie membră a grupului <b>VINCI Energies</b> – lider mondial pe piața construcțiilor.</p>
-
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12 col-12 mt-5 mt-lg-0" style="padding-top:2rem">
-                            <p>
-                                <b>STIZO Nuclear S.A.</b> este o companie specializată în executarea lucrărilor de construcții, având ca domeniu principal 
-                                lucrări de construcții în sectorul nuclear în <b>Cernavodă</b>, dar in egală măsură și în sectorul civil (zona industrială 
-                                Constanța, port Constanța). 
-                            </p>
-                            <p>
-                                Respectarea cu <b>promptitudine și corectitudine </b> a termenilor contractuali și cerințelor de respectare a 
-                                termenelor și bugetelor alocate recomandă cu tărie compania noastră ca un partener puternic și serios, 
-                                unde este obligatoriu cel mai înalt nivel de calitate. 
-                            </p>
-                            <p>
-                                Compania are propriul stoc de mașini și echipamente de <b>înaltă performanță</b> care poate efectua orice lucrare la termenele stabilite. 
-                            </p>
-                            <p>     
-                                Toate lucrările sunt executate de <b>personal specializat și calificat</b> cu un nivel înalt de calificare. Lucrările se execută în 
-                                conformitate cu cerințele documentației tehnice de execuție și cu regulile specifice. 
-                            </p>
-                            <p>   
-                                Combinând cea mai înaltă calitate a materialelor utilizate și calificarea înaltă a personalului nostru, planurile 
-                                și construcțiile dumneavoastră se angajează definitiv să îndeplinească garanția calității.
-
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            
-
-
-
-
-
-            <section class="services section-padding" id="section_3">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-10 col-12 mx-auto">
-                            <div class="section-title-wrap  justify-content-center ">
-                                <h2 class="text-white">Domenii de activitate
-                                    <div style="margin: top 5rem !important;font-size:1.5rem!important;color:white!important;font-style:normal!important;font-family:sans-serif;letter-spacing:-1px;">în sectorul Nuclear (SN) și sectorul Civil (SC)</div>
-                                </h2>
-                            </div>
-                        </div>
-
-                        <div style="margin-top:5rem">
-                            <p>
-                                <b>Experiența, seriozitatea și pregatirea profesională</b> a colectivului nostru, precum și capacitatea forței de muncă 
-                                și a dotării tehnice, oferă garanția executării de lucrări în domeniile:  
-                            </p>
-
-
-                                
-
-                              
-                            <div class="row">
-                                <div id="detaliiDomenii" class="col-lg-6 col-12 mt-5 mt-lg-0" >
-                                    <details  open>
-                                        <summary onclick="changeLucrariReferinta(1)">Construcții industriale</summary>
-                                        
-                                        <ul>
-                                            <li>
-                                                Compania STIZO Nuclear S.A. execută construcții industriale la cheie cuprinzând săpătura (inclusiv în spații limitate prin crearea de incinte de lucru), îmbunătățire teren (pernă piatră), structura de beton propriu-zisă (inclusiv lucrările de zidarie portantă), hidroizolații sub și supra terane, finisaje, atât în domeniul Nuclear cat și în domeniul Civil.
-                                            </li>
-                                        </ul>
-                                        
-                                    </details>
-                                    <details>
-                                        <summary onclick="changeLucrariReferinta(2)">Consolidări de structuri în construcții </summary>
-                                        <ul>
-                                            <li>
-                                                Compania deține procedee tehnologice de consolidare a structurilor de beton în domeniul Nuclear și în domeniul Civil.
-                                            </li>
-                                        </ul>
-                                    </details>
-                                    <details>
-                                        <summary  onclick="changeLucrariReferinta(3)">Termoizolații pe conducte și echipamente </summary>
-                                        <ul>
-                                            <li>Izolații cu vată minerală și protecție de tablă pe conducte și echipamente, inclusiv structura metalică suport pentru acestea. 
-                                                În domeniul Nuclear și în domeniul Civil. 
-                                            </li>
-                                            <li>Izolații reci pentru temperaturi până la -160ᵒC cu foamglass, poliuretan, poliizocianurat, kaiflex, armaflex, polistiren și protecție cu tablă folosind o tehnologie proprie de execuție.  
-                                                În domeniul Nuclear și în domeniul Civil.    
-                                            </li>
-                                        </ul>
-                                    </details>
-                                    <details>
-                                        <summary  onclick="changeLucrariReferinta(4)">Închideri structuri metalice cu panouri sandwich</summary>
-                                        <ul>
-                                            <li>
-                                                Izolație cu vată minerală sau poliuretan
-                                            </li>
-                                        </ul>
-                                    </details>
-                                    <details>
-                                        <summary  onclick="changeLucrariReferinta(6)">Căptușeli cu betoane refractare</summary>
-                                        
-                                        <ul>
-                                            <li>
-                                                Căptușeli cu betoane refractare aplicate prin torcretare, turnare și stampare, inclusiv sudarea structurii metalice suport cu respectarea cerințelor ISCIR, atât în domeniul Nuclear cât și în domeniul Civil.
-                                                Execuția betoanelor refractare în industria de prelucrare a petrolului este conformă normelor UOP. 
-                                            </li>
-                                        </ul>
-                                        
-                                    </details>
-                                    <details>
-                                        <summary  onclick="changeLucrariReferinta(5)">Protecții anti-corozive</summary>
-                                        <ul>
-                                            <li>STIZO Nuclear S.A. execută o gamă largă de protecții anti-corozive pe structuri metalice și de beton.  
-                                            </li>
-                                            <li>În domeniul Nuclear execută căptușeli epoxidice/poliuretanice decontaminabile pe structuri de beton (pereți, tavane, pardoseli), iar pentru bazinele de apa detine tehnologia de execuție, ambele aprobate de Client și CNCAN - autoritatea națională pentru reglementarea, autorizarea și controlul activităților nucleare.   
-                                            </li>
-                                        </ul>                           
-                                    </details>
-                                    
-                                    <details>
-                                        <summary  onclick="changeLucrariReferinta(7)">Protecții antifoc executate cu mortare sau vopsele termospumante </summary>
-                                        <ul>
-                                            <li>Protecții antifoc cu mortar pe bază de vată minerală, ciment și adaosuri de materiale rezistente la foc. 
-                                                Materialul folosit de noi are agrement tehnic, fiind atestat atât în regim hidrocarbonic, cât și în regim celulozic. 
-                                            </li>
-                                            <li>Vopselele termospumante oferă soluții atât pentru foc celulozic, cât și pentru foc hidrocarburi. 
-                                                Compania, personalul de execuție, precum și sculele și echipamentele din dotare sunt avizate ISU (pompieri). 
-                                                   
-                                            </li>
-                                            <p>În domeniul Nuclear și în domeniul Civil.</p>
-                                        </ul>                              
-                                    </details>
-                                    <details>
-                                        <summary  onclick="changeLucrariReferinta(8)">Termohidroizolații</summary>
-                                            <ul>
-                                                <li>
-                                                    STIZO Nuclear S.A. execută diverse tipuri de termohidroizolații conform proiectelor date, sau la cerere după tehnologii proprii în domeniul Nuclear și în domeniul Civil.
-                                                </li>
-                                            </ul>
-                                            
-                                    </details>
-                                    <details>
-                                        <summary  onclick="changeLucrariReferinta(9)">Lucrări speciale</summary>
-                                        <ul>
-                                            <li>
-                                                STIZO Nuclear S.A. execută lucrări de torcretare beton, închidere fisuri în beton prin injectare și etanșare rosturi de tasare după tehnologii proprii în domeniul Nuclear și în domeniul Civil.
-                                            </li>
-                                        </ul>
-                                    </details>
-                                </div>
-                      
-                                <div class="col-lg-6 col-12 mt-5 mt-lg-0">
-                                    <p style="font-size:1.4rem;color:black;"><b>Lucrări de referință:</b><div id="titluLucrare" style="font-size:1.2rem;"></div></p>
-                                    <div id="lucrariReferinta">-</div>
-
-                                    <!-- <img src="images/gal.png" id="galerie"/>    -->
-                                    
-
-                                    <div class="containerPozaCurenta"></div>
-                                    <div class="containerGalerie"></div> 
-
-                                    
-                                    
-                                                            
-                                </div>
-                                
-
-                            </div>
-                        
-                            
-                            <p>
-                                Toate lucrările executate de <b>STIZO Nuclear S.A.</b> sunt procedurate, fiind aprobate de către Clienți, iar în domeniul 
-                                Nuclear și de către <b>CNCAN</b> - autoritatea națională pentru reglementarea, autorizarea și controlul activităților nucleare.
-                            </p>
-                        
-                        </div>
-                         
-                        
-                    
-
-                                  
-                                    
-                            
-                                
-                        
-                    </div>
-                </div>
-            </section>
-
-            <section class="about section-padding" id="section_4">
-                <div class="container">
-                    <div class="row" >
-
-                        
-                        
-                        <div class="col-lg-10 col-12 mx-auto">
-                            <div class="section-title-wrap  justify-content-center " style="margin-bottom:4rem;">
-                                <h2 class="text-white">Certificări</h2>
-                            </div>
-
-                            <ul style="list-style-type: none;" >
-                                <li style="margin-top:1.2rem;"><a href="certificari/1_ISO_9001.pdf" target="_blank" id="certificat">Certificat Sistemul de Management al Calității - SR EN ISO 9001: 2015  <i class="fa fa-file tab"></i></a></li>
-                                <li style="margin-top:1.2rem;"><a href="certificari/2_ISO_14001.pdf" target="_blank" id="certificat">Certificat Sistemul de Management de Mediu - SR EN ISO 14001: 2015 <i class="fa fa-file tab"></i></a></li>
-                                <li style="margin-top:1.2rem;"><a href="certificari/3_ISO_45001.pdf" target="_blank" id="certificat">Certificat Sistemul de Management al Sanătății și Securității în Muncă - SR ISO 45001: 2018 <i class="fa fa-file tab"></i></a></li>
-                                <li style="margin-top:1.2rem;"><a href="certificari/4_Autorizatie CNCAN constructii-montaj.pdf" target="_blank" id="certificat">Autorizație CNCAN: Sistemul de Management al Calității în domeniul nuclear – pentru activități de construcții-montaj <i class="fa fa-file tab"></i></a></li>
-                                <li style="margin-top:1.2rem;"><a href="certificari/5_Autorizatie  CNCAN aprovizionare.PDF" target="_blank" id="certificat">Autorizație CNCAN: Sistemul de Management al Calității în domeniul nuclear – pentru activități de aprovizionare <i class="fa fa-file tab"></i></a></li>
-                                <li style="margin-top:1.2rem;"><a href="certificari/6_Autorizatie CNCAN fabricare.pdf" target="_blank" id="certificat">Autorizație CNCAN: Sistemul de Management al Calității în domeniul nuclear – pentru activități de fabricare și servicii <i class="fa fa-file tab"></i></a></li>
-                                <li style="margin-top:1.2rem;"><a href="certificari/7_Certificat de acceptare in zona controlata_2022.pdf" target="_blank" id="certificat">Certificat CNCAN: Acceptare pentru desfăsurarea de activități în zona controlată <i class="fa fa-file tab"></i></a></li>
-                                <li style="margin-top:1.2rem;"><a href="certificari/8_Autorizati_termoprotectie_ vopsele_termospumante.PDF" target="_blank" id="certificat">Autorizație IGSU: efectuare lucrări de termoprotecție cu vopsele termospumante <i class="fa fa-file tab"></i></a></li>
-                                <li style="margin-top:1.2rem;"><a href="certificari/9_Autorizatie_termoprotectie_ produse_torcretare.pdf" target="_blank" id="certificat">Autorizație IGSU: efectuare lucrări de termoprotecție cu produse de torcretare <i class="fa fa-file tab"></i></a></li>
-                                <li style="margin-top:1.2rem;"><a href="certificari/10_Autorizatie ignifugare.PDF" target="_blank" id="certificat">Autorizație IGSU: efectuare lucrări de ignifugare a materialelor combustibile <i class="fa fa-file tab"></i></a></li>
-                                <li style="margin-top:1.2rem;"><a href="certificari/11_Autorizatie ISCIR.PDF" target="_blank" id="certificat">Autorizație ISCIR: reparare recipiente metalice stabile <i class="fa fa-file tab"></i></a></li>
-                            </ul>
-
-                        </div>
-                    </div>
-
-                    
-                    
-                </div>
-            </section>
-
-            <section class="contact section-padding" id="section_5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2400.1246637436543!2d28.046518905023895!3d44.325462837538076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ba9ce08cdc72eb%3A0x6fc05893874b01fe!2sStr.%20Valea%20Ci%C8%99melei%203%2C%20Cernavod%C4%83%20905200!5e0!3m2!1sen!2sro!4v1667171978041!5m2!1sen!2sro"  id="hartaGoogle" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>         
-                        </div>
-                        <div class="col-md-6">
-                          <div style="margin-top:2rem;">
-                                                       
-                            
-                            <a style="color:#535da1;font-size:large;" target="_blank" href = "https://www.google.com/maps?ll=44.325789,28.049857&z=16&t=m&hl=en&gl=RO&mapclient=embed&q=Str.+Valea+Ci%C8%99melei+3+Cernavod%C4%83+905200"><i class="fa fa-map-marker" ></i> Cernavoda , Valea Cismelei nr. 3 , Constanta</a>
-                            <br/>
-                            <br/>
-                            <a style="color:#535da1;font-size:large;" href = "tel:0241238663"><i class="fa fa-phone" ></i> +40 241 238 663</a>
-                            <br/>
-                            <br/>
-                            <a style="color:#535da1;font-size:large;" href = "tel:0742102182"><i class="fa fa-mobile" ></i> +40 742 102 182</a>
-                            <br/>
-                            <br/>
-                            <a style="color:#535da1;font-size:large;" href = "tel:0241237425"><i class="fa fa-fax" ></i> +40 241 237 425</a>
-                            <br/>
-                            <br/>
-                            <a style="color:#535da1;font-size:large;" href = "mailto:stizon@cernavoda.ro"><i class="fa fa-envelope" ></i> stizon@cernavoda.ro</a>
-                            <br/>
-                            <br/>
-                            <a style="color:#535da1;font-size:large;" target="_blank" href = "https://www.facebook.com/stizonuclearcernavoda/"><i class="fa fa-facebook-square" ></i> Facebook</a>
-                            <br/>
-                            <br/>
-                            <a style="color:#535da1;font-size:large;" target="_blank">NR. O.R.C.  J13/981/2001<br/> C.U.I.: 13818681</a>
-                            <br/>
-                            <br/>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-            </div>
-            <div class="poweredBy text-center mb-5">
-                <a taget="_blank" href="https://tdlsoft.ro" style="color:white;">Powered by TDL Soft</a> 
-            </div>
-        </section>
+        </ol>
+    <p><b>În cazul în care sunteți alergic sau aveți intoleranță la vreun ingredient, vă rugăm să consultați cu atenție lista înainte de a plasa comanda!</b></p>
         
-        </main>
-        
-        
-        <footer class="site-footer">
-            
+    </div>
+    
 
-            <div class="text-center mb-5" style="font-weight:bold;">Companie membră a grupului
+</div>
 
-                <a href="https://www.vinci-energies.ro/ro/" target="_blank" ><img src="images/VINCI-Logo.png" class="grup"></a>
-                <!-- <a taget="_blank" href="https://tdlsoft.ro" style="color:black;margin-left:12rem;">| Powered by TDL Soft</a> -->
+<div class="meniu"></div>
 
-            </div>
-
-
-        </footer>
-            <!-- <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>     -->
-    </body>
-
+</body>
 </html>
