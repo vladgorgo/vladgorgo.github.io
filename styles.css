@@ -30,6 +30,7 @@
     border-bottom-color: black;
     border-bottom: 0.2rem;
     border-style: ridge;
+    
 }
 
 .categorie
@@ -40,7 +41,7 @@
     
 }
 
-img
+.logo
 {
     margin:auto;
     width:10rem;
@@ -67,4 +68,24 @@ ol
 .hidden
 {
     display: none;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .pozaProdus
+    {
+        border-radius:1rem;
+        border-width:2px;
+        border-color:red;
+        margin:1rem auto;
+    }  
+}
+
+@media only screen and (min-width: 768px) {
+
+.pozaProdus
+    {
+        max-width: 25rem; /* Adjust the width as needed */
+        margin-left: 1rem;
+    }  
 }
