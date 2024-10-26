@@ -1,57 +1,418 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Eating App</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Custom styles for animation */
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
 
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Donerci Omer Usta</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
-    <script src='scripts.js'></script>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <link rel="icon" type="image/x-icon" href="/POZE/LOGO.ico">
-
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
 </head>
-<body class="bg-red-800">
-<div class="cardLogo">
-    <img class="logo" src="POZE/Logo.png">
-    <h1 style="text-align: center;font-size:20px;"><b>Dönerci Ömer Usta</b></h1>
-    <h2 style="text-align: center;font-size:20px;">Comanda se face la casierie</h2>
-</div>
+<body class="bg-blue-50">
 
-<div class="cardAlergeni">
-    <div style="border-bottom-color: black; border-bottom: 0.2rem; border-style: ridge;"  onclick="toggleParagraph()">
-        <div style="position:absolute;right: 3rem;font-size:1.2rem;">▼</div>
-        <h2  style="font-size:1.6rem"><b>Alergeni</b></h2> 
-    </div>
-    <div id="paragraph" class="hidden" style="padding-top:1rem;">
-        <p>Conform Directivei 2000/13/CE a Parlamentului European si a Consiliului din 20 Martie 2000 alergenii din alimente se pot incadra in urmatoarele grupe:</p>
-        <ol type="1">
-            <li>Cereale care contin gluten (grau, secara, orz, ovaz, grau spelt, grau mare sau hibrizi ai acestora) si produse derivate;</li>
-            <li>Crustacee si produse derivate;</li>
-            <li>Oua si produse derivate;</li>
-            <li>Peste si produse derivate;</li>
-            <li>Arahide si produse derivate;</li>
-            <li>Soia si produse derivate;</li>
-            <li>Lapte si produse derivate;</li>
-            <li>Fructe cu coaja, adica migdale, alune de padure, nuci, anacarde (Anacardium Occidentale), nuci Pecan, nuci de Brazilia, fistic, nuci de Macadamia si nuci de Queesland si produse derivate;</li>
-            <li>Telina si produse derivate;</li>
-            <li> Mustar si produse derivate;</li>
-            <li> Seminte de susan si produse derivate;</li>
-            <li> Dioxid de sulf si sulfiti in concentratii de peste 10mg/kg sau 10mg/litru;</li>
-            <li> Lupin si produse derivate</li>
-            <li> Moluste si produse derivate.</li>
-            
-        </ol>
-    <p><b>În cazul în care sunteți alergic sau aveți intoleranță la vreun ingredient, vă rugăm să consultați cu atenție lista înainte de a plasa comanda!</b></p>
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-3xl font-extrabold text-blue-600 flex items-center space-x-2">
+                <img src="https://placehold.co/600x400" alt="Logo" class="w-10 h-10 rounded-full">
+                <span>Healthy Eating</span>
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#" class="text-lg text-gray-700 font-semibold hover:text-blue-600 transition duration-300">Articles & Resources</a>
+                <a href="#" class="text-lg text-gray-700 font-semibold hover:text-blue-600 transition duration-300">Meal Plans</a>
+                <a href="#" class="text-lg text-gray-700 font-semibold hover:text-blue-600 transition duration-300">Healthy Recipes</a>
+                <a href="#" class="text-lg text-gray-700 font-semibold hover:text-blue-600 transition duration-300">About</a>
+                <a href="#" class="text-lg text-gray-700 font-semibold hover:text-blue-600 transition duration-300">Help</a>
+                <a href="#" class="bg-blue-500 text-white py-2 px-6 rounded-full shadow-md hover:bg-blue-600 transition duration-300">Try for Free</a>
+            </div>
+            <div class="md:hidden flex items-center">
+                <button id="nav-toggle" class="text-blue-600 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="nav-menu" class="md:hidden mt-4 hidden">
+            <div class="flex flex-col space-y-4">
+                <a href="#" class="text-lg text-gray-700 font-semibold hover:text-blue-600 transition duration-300">Articles & Resources</a>
+                <a href="#" class="text-lg text-gray-700 font-semibold hover:text-blue-600 transition duration-300">Meal Plans</a>
+                <a href="#" class="text-lg text-gray-700 font-semibold hover:text-blue-600 transition duration-300">Healthy Recipes</a>
+                <a href="#" class="text-lg text-gray-700 font-semibold hover:text-blue-600 transition duration-300">About</a>
+                <a href="#" class="text-lg text-gray-700 font-semibold hover:text-blue-600 transition duration-300">Help</a>
+                <a href="#" class="bg-blue-500 text-white py-2 px-6 rounded-full shadow-md hover:bg-blue-600 transition duration-300">Try for Free</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="flex items-center justify-center h-screen bg-gradient-to-r from-blue-400 to-blue-600">
+        <div class="text-center text-white fade-in">
+            <h2 class="text-5xl font-extrabold mb-6">Turn Your Diet into Something Greater</h2>
+            <p class="text-xl mb-8">Eat healthy, feel great, and invest in your well-being with our guided meal plans.</p>
+            <button id="start-btn" class="bg-blue-500 text-white py-3 px-6 rounded-full shadow-lg transform transition duration-300 hover:scale-105 hover:bg-blue-400">Get Started</button>
+            <div class="flex justify-center items-center space-x-4 mt-6">
+                <a href="#" class="inline-block"></a>
+                <a href="#" class="inline-block"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto text-center px-4">
+            <h3 class="text-4xl font-extrabold mb-6 fade-in">Take the Next Step in Your Healthy Eating Journey</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-blue-100 rounded-lg shadow-md fade-in">
+                    <div class="mb-4">
+                        <img src="https://placehold.co/600x400" alt="Start Icon" class="mx-auto">
+                    </div>
+                    <h4 class="text-2xl font-bold mb-2">Get Started from $1</h4>
+                    <p class="text-lg">Great health begins with simple steps. Start today with as little as $1.</p>
+                </div>
+                <div class="p-6 bg-blue-100 rounded-lg shadow-md fade-in">
+                    <div class="mb-4">
+                        <img src="https://placehold.co/600x400" alt="Guide Icon" class="mx-auto">
+                    </div>
+                    <h4 class="text-2xl font-bold mb-2">Let Us Be Your Guide</h4>
+                    <p class="text-lg">Get a helping hand through every step of your healthy eating journey.</p>
+                </div>
+                <div class="p-6 bg-blue-100 rounded-lg shadow-md fade-in">
+                    <div class="mb-4">
+                        <img src="https://placehold.co/600x400" alt="Growth Icon" class="mx-auto">
+                    </div>
+                    <h4 class="text-2xl font-bold mb-2">Grow with Healthy Eating</h4>
+                    <p class="text-lg">Find the best meal plans and nutrition guides for your specific needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- 1st Informative Section -->
+<section class="py-16 bg-blue-50">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+        <!-- Text Section -->
+        <div class="md:w-1/2 text-left mb-12 md:mb-0">
+            <h3 class="text-4xl font-extrabold mb-6">Achieve your healthy eating goals with our award-winning app</h3>
+            <p class="text-lg mb-6">
+                We’re the only app you need to make healthy eating easy, from planning nutritious meals to doorstep delivery. Build better habits faster with personalized meal plans and get the support you need to eat well every day!
+            </p>
+            <p class="text-sm text-gray-600 mb-4">
+                Terms and conditions may apply. HealthyEats is provided by HealthyEats Ltd.
+            </p>
+            <a href="#" class="text-lg text-blue-600 font-bold underline hover:text-blue-800">Get started with HealthyEats</a>
+        </div>
         
+        <!-- Image Section -->
+        <div class="md:w-1/2 flex justify-center">
+            <div class="relative w-full max-w-sm">
+                <img src="https://placehold.co/1200x800" alt="Healthy Eating Overview" class="w-full rounded-lg shadow-lg">
+                <!-- Adding some decorative elements -->
+                <div class="absolute top-4 right-4 h-4 w-4 bg-yellow-400 rounded-full animate-ping"></div>
+                <div class="absolute bottom-8 left-8 h-4 w-4 bg-yellow-400 rounded-full animate-ping"></div>
+            </div>
+        </div>
     </div>
-    
+</section>
 
-</div>
 
-<div class="meniu"></div>
+<!--2nd Informative Section -->
+<section class="py-15 bg-blue-50">
+    <div class="container mx-auto flex flex-col md:flex-row-reverse items-center justify-between px-4">
+        <!-- Text Section -->
+        <div class="md:w-1/2 text-left mb-12 md:mb-0">
+            <h3 class="text-4xl font-extrabold mb-6">Achieve long-term health goals with HealthyEats</h3>
+            <p class="text-lg mb-6">
+                Start eating healthier with our app, offering personalized meal plans and nutritious recipes. Keep things simple with one of our guided meal plans, or take control by customizing your own diet.
+            </p>
+            <p class="text-lg mb-4">
+                Plus, track your progress over time and get expert tips to make lasting changes to your diet and lifestyle.
+            </p>
+            <p class="text-sm text-gray-600 mb-4">
+                Results may vary. All changes should be part of a long-term approach to health. Consult with a health professional if needed. Dietary recommendations depend on individual circumstances and can evolve with new research.
+            </p>
+            <a href="#" class="text-lg text-blue-600 font-bold underline hover:text-blue-800">Start your healthy eating journey</a>
+        </div>
+        
+        <!-- Image Section -->
+        <div class="md:w-1/2 flex justify-center">
+            <div class="relative w-full max-w-sm">
+                <img src="https://placehold.co/600x400" alt="Healthy Eating Overview" class="w-full rounded-lg shadow-lg">
+                <!-- Adding some decorative elements -->
+                <div class="absolute top-4 right-4 h-4 w-4 bg-yellow-400 rounded-full animate-ping"></div>
+                <div class="absolute bottom-8 left-8 h-4 w-4 bg-yellow-400 rounded-full animate-ping"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--3rd Informative Section -->
+<section class="py-16 bg-blue-50">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+        <!-- Text Section -->
+        <div class="md:w-1/2 text-left mb-12 md:mb-0">
+            <h3 class="text-4xl font-extrabold mb-6">Reach your fitness goals with our top-rated workout app</h3>
+            <p class="text-lg mb-6">
+                Our app provides everything you need to get fit, from tailored workout plans to guided video exercises. Track your progress and stay motivated with our fitness challenges and expert tips.
+            </p>
+            <p class="text-sm text-gray-600 mb-4">
+                Results may vary. Always consult with a professional trainer before starting a new fitness regimen. FitPro is provided by FitPro Ltd.
+            </p>
+            <a href="#" class="text-lg text-blue-600 font-bold underline hover:text-blue-800">Get started with FitPro</a>
+        </div>
+        
+        <!-- Image Section -->
+        <div class="md:w-1/2 flex justify-center">
+            <div class="relative w-full max-w-sm">
+                <img src="https://placehold.co/600x400" alt="Fitness Overview" class="w-full rounded-lg shadow-lg">
+                <!-- Adding some decorative elements -->
+                <div class="absolute top-4 right-4 h-4 w-4 bg-yellow-400 rounded-full animate-ping"></div>
+                <div class="absolute bottom-8 left-8 h-4 w-4 bg-yellow-400 rounded-full animate-ping"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 4th Informative Section -->
+<section class="py-16 bg-blue-50">
+    <div class="container mx-auto flex flex-col md:flex-row-reverse items-center justify-between px-4">
+        <!-- Text Section -->
+        <div class="md:w-1/2 text-left mb-12 md:mb-0">
+            <h3 class="text-4xl font-extrabold mb-6">Transform your diet with NutriTrack</h3>
+            <p class="text-lg mb-6">
+                Discover healthier eating habits with our app, featuring nutritious meal plans, grocery shopping lists, and delicious recipes. Choose from various meal plans to fit your dietary needs, or create your own custom plan.
+            </p>
+            <p class="text-lg mb-4">
+                Track your food intake, monitor your progress, and get personalized nutrition advice to help you achieve your health goals sustainably.
+            </p>
+            <p class="text-sm text-gray-600 mb-4">
+                Individual results may vary. Consult a nutritionist for any specific dietary concerns. Recommendations are based on general guidelines and may evolve with new research.
+            </p>
+            <a href="#" class="text-lg text-blue-600 font-bold underline hover:text-blue-800">Start your healthy eating journey</a>
+        </div>
+        
+        <!-- Image Section -->
+        <div class="md:w-1/2 flex justify-center">
+            <div class="relative w-full max-w-sm">
+                <img src="https://placehold.co/600x400" alt="Healthy Eating Overview" class="w-full rounded-lg shadow-lg">
+                <!-- Adding some decorative elements -->
+                <div class="absolute top-4 right-4 h-4 w-4 bg-yellow-400 rounded-full animate-ping"></div>
+                <div class="absolute bottom-8 left-8 h-4 w-4 bg-yellow-400 rounded-full animate-ping"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Trust Section -->
+<section class="py-12 bg-blue-50">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <!-- Quality -->
+        <div class="p-6 bg-blue-100 rounded-lg shadow-md">
+            <div class="flex justify-center mb-4">
+                <div class="h-10 w-10 bg-blue-500 text-white rounded-full flex items-center justify-center">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                </div>
+            </div>
+            <h4 class="text-xl font-bold mb-2">Quality Ingredients</h4>
+            <p class="text-md text-gray-700">
+                All our meal plans are designed with high-quality, organic ingredients to support a healthy lifestyle.
+            </p>
+        </div>
+
+        <!-- Secure -->
+        <div class="p-6 bg-blue-100 rounded-lg shadow-md">
+            <div class="flex justify-center mb-4">
+                <div class="h-10 w-10 bg-blue-500 text-white rounded-full flex items-center justify-center">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 1.104.896 2 2 2s2-.896 2-2-.896-2-2-2-2 .896-2 2zm0 4c0 .554-.446 1-1 1s-1-.446-1-1c0-.554.446-1 1-1s1 .446 1 1zm0 0v4m0-4c0-3.314-2.686-6-6-6V5c0-1.104.896-2 2-2s2 .896 2 2v3c3.314 0 6 2.686 6 6z"></path>
+                    </svg>
+                </div>
+            </div>
+            <h4 class="text-xl font-bold mb-2">Secure Data</h4>
+            <p class="text-md text-gray-700">
+                Your information is safe with us. We use the latest security protocols to protect your data.
+            </p>
+        </div>
+
+        <!-- Trusted -->
+        <div class="p-6 bg-blue-100 rounded-lg shadow-md">
+            <div class="flex justify-center mb-4">
+                <div class="h-10 w-10 bg-blue-500 text-white rounded-full flex items-center justify-center">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c0 1.104-.896 2-2 2s-2-.896-2-2 .896-2 2-2 2 .896 2 2zm0 4c0 2.208-1.792 4-4 4s-4-1.792-4-4 1.792-4 4-4 4 1.792 4 4zM12 17h8m-4-2v4m0 0h4m-4 0h-4m0 0v-4m0 4H8"></path>
+                    </svg>
+                </div>
+            </div>
+            <h4 class="text-xl font-bold mb-2">Trusted by Users</h4>
+            <p class="text-md text-gray-700">
+                Our users love us! Rated 5 stars on multiple platforms for helping them achieve healthier lifestyles.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Community and Support Section -->
+<section class="py-16 bg-blue-50">
+    <div class="container mx-auto text-center">
+        <!-- Main Heading -->
+        <h3 class="text-3xl font-extrabold mb-12">Join over 500,000 people making healthier choices with NutriTrack</h3>
+        
+        <!-- Sub Heading -->
+        <h4 class="text-2xl font-semibold mb-8">Get support from real nutrition experts who care</h4>
+        
+        <!-- Team Members Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <!-- Member 1 -->
+            <div>
+                <h5 class="text-lg font-bold">Alice</h5>
+                <p class="text-sm text-gray-600">Head of Nutritional Guidance</p>
+            </div>
+            
+            <!-- Member 2 -->
+            <div>
+                <h5 class="text-lg font-bold">Michael</h5>
+                <p class="text-sm text-gray-600">Meal Plan Specialist</p>
+            </div>
+            
+            <!-- Member 3 -->
+            <div>
+                <h5 class="text-lg font-bold">Sophie</h5>
+                <p class="text-sm text-gray-600">Dietitian & Recipe Developer</p>
+            </div>
+            
+            <!-- Member 4 -->
+            <div>
+                <h5 class="text-lg font-bold">James</h5>
+                <p class="text-sm text-gray-600">Community Support Manager</p>
+            </div>
+            
+            <!-- Member 5 -->
+            <div>
+                <h5 class="text-lg font-bold">Emma</h5>
+                <p class="text-sm text-gray-600">Customer Support Specialist</p>
+            </div>
+            
+            <!-- Member 6 -->
+            <div>
+                <h5 class="text-lg font-bold">Marcus</h5>
+                <p class="text-sm text-gray-600">Customer Success - Team Lead</p>
+            </div>
+            
+            <!-- Member 7 -->
+            <div>
+                <h5 class="text-lg font-bold">David</h5>
+                <p class="text-sm text-gray-600">Fitness & Nutrition Advisor</p>
+            </div>
+            
+            <!-- Member 8 -->
+            <div>
+                <h5 class="text-lg font-bold">Julia</h5>
+                <p class="text-sm text-gray-600">Mindset Coach</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Final CTA and Important Info Section -->
+<section class="py-16 bg-blue-50">
+    <div class="container mx-auto text-center">
+        <!-- Award-Winning App Tagline -->
+        <h3 class="text-2xl font-semibold mb-12">All with one award-winning app</h3>
+    </div>
+</section>
+
+<section class="py-16 bg-white">
+    <div class="container mx-auto text-center mb-16">
+        <!-- Call to Action -->
+        <h3 class="text-3xl font-extrabold mb-4">Ready to start your healthy eating journey?</h3>
+        <p class="text-lg text-gray-700 mb-8">Let NutriTrack be your guide.</p>
+    </div>
+
+    <!-- Important Information Section -->
+    <div class="container mx-auto text-left px-4 md:px-0 max-w-4xl">
+        <h4 class="text-xl font-bold mb-4">It's important you know!</h4>
+        <p class="text-sm text-gray-600 mb-4">
+            Making changes to your diet can significantly impact your health. The benefits of incorporating more nutritious foods can vary depending on individual circumstances, and results can take time. 
+        </p>
+        <p class="text-sm text-gray-600 mb-4">
+            Our meal plans are designed to support a balanced diet, but it's essential to listen to your body and adjust your eating habits based on your needs.
+        </p>
+        <p class="text-sm text-gray-600 mb-4">
+            If you have any pre-existing health conditions or specific dietary requirements, we recommend consulting with a registered dietitian or healthcare professional before making substantial changes to your diet.
+        </p>
+        <p class="text-sm text-gray-600 mb-4">
+            Healthy eating is a journey, and we are here to support you every step of the way. NutriTrack is your partner in creating sustainable and enjoyable eating habits.
+        </p>
+    </div>
+</section>
+
+
+    <!-- Call to Action Section -->
+    <section class="py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <div class="container mx-auto text-center px-4">
+            <h3 class="text-4xl font-extrabold mb-6 fade-in">Ready to Start Your Healthy Eating Journey?</h3>
+            <p class="text-xl mb-8 fade-in">Join thousands of others who have transformed their diet with our app. Start today!</p>
+            <button class="bg-blue-500 text-white py-3 px-6 rounded-full shadow-lg transform transition duration-300 hover:scale-105 hover:bg-blue-400 fade-in">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto text-center px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="text-lg font-bold mb-2">About Us</h4>
+                    <ul>
+                        <li><a href="#" class="text-sm hover:underline">Our Story</a></li>
+                        <li><a href="#" class="text-sm hover:underline">Careers</a></li>
+                        <li><a href="#" class="text-sm hover:underline">Press</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-2">Support</h4>
+                    <ul>
+                        <li><a href="#" class="text-sm hover:underline">Help Center</a></li>
+                        <li><a href="#" class="text-sm hover:underline">Contact Us</a></li>
+                        <li><a href="#" class="text-sm hover:underline">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-2">Follow Us</h4>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="hover:underline">Facebook</a>
+                        <a href="#" class="hover:underline">Twitter</a>
+                        <a href="#" class="hover:underline">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-sm">&copy; 2024 Healthy Eating. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- jQuery Script -->
+    <script>
+        $('#nav-toggle').on('click', function() {
+            $('#nav-menu').toggleClass('hidden');
+        });
+
+        $('#start-btn').on('click', function() {
+            alert('Your healthy eating journey has begun. Let\'s make better choices together!');
+        });
+    </script>
 
 </body>
 </html>
