@@ -1,0 +1,33 @@
+section#contact>div>div>p
+{
+    padding-left: 2rem;
+    padding-bottom: 1.5rem;    
+}
+
+#logo
+{
+    width: 20vw;
+}
+
+iframe
+{
+    height: 100%;
+    width: 100%;
+    border: 0px;
+}
+
+ul>li.a {
+    list-style-type: circle;
+}
+
+
+#cert_iso
+{
+    width: 15rem;
+ 
+}
+
+
+.fa-phone,.fa-square-envelope{
+padding-right: 1rem;    
+}
