@@ -14,86 +14,212 @@
 <body>
 <!-- Prima pagină: Prezentarea companiei -->
 <div class="bg-gray-100 min-h-screen flex flex-col">
-  <header class="sticky top-0 bg-white shadow-md z-10">
-    <div class="container mx-auto flex items-center justify-between p-4">
-       <img src="assets/logo.png" id="logo"></img>
-      <nav>
-        <ul class="text-2xl flex space-x-4">
-          <li><a href="#despre" class="hover:text-blue-600">Despre noi</a></li>
-          <li><a href="#servicii" class="hover:text-blue-600">Servicii</a></li>
-          <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  
+
+<nav class="bg-white border-gray-200 dark:bg-gray-900">
+  <div class="max-w-screen-xl flex-col flex-wrap items-center justify-between mx-auto p-4">
+    <a href="#" class="flex flex-col items-center space-x-3 rtl:space-x-reverse">
+        <img src="assets/logo.png" class="h-16" alt="Navirex SRL" />
+    </a>
+    <!-- <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button> -->
+    <!-- <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        
+        <li>
+          <a href="#despre" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Despre noi</a>
+        </li>
+        <li>
+          <a href="#servicii" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Servicii</a>
+        </li>
+        <li>
+          <a href="#contact" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+        </li>
+      </ul>
+    </div> -->
+  </div>
+</nav>
+
 
   <main class="container mx-auto p-6 flex-grow">
-    <section id="despre" class="bg-white p-6 rounded-lg shadow-md mb-6">
-      <div class="text-xl container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div>
-            <h2 class="text-2xl font-bold text-gray-800 mb-4 m-5" >Despre Noi</h2>
-            <p class="text-gray-700 text-xl leading-relaxed p-5">
-              Navirex SRL, cu sediul în Constanța, este un lider în producția de servicii și echipamente 
-              destinate domeniului naval. Compania, certificată ISO 9001:2015, se remarcă prin oferirea 
-              de soluții tehnice avansate și personalizate pentru nave de navigație interioară, respectând
-               cele mai stricte reglementări europene și asigurând standarde de excelență.
-            </p>
-          </div>
-          <div style="display: flex;flex-direction: row-reverse;">
-            <img id="cert_iso" src="assets/iso_9001_2015.png"/>
+    
+
+
+    <section id="despre" class="py-24 relative">
+      <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
+          <div class="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
+              <div
+                  class="w-full justify-center items-start gap-6 grid sm:grid-cols-2 grid-cols-1 lg:order-first order-last">
+                  <div class="pt-24 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
+                      <img class=" rounded-xl object-cover" src="assets/img/1.jpeg" alt="about Us image" />
+                  </div>
+                  <img class="sm:ml-0 ml-auto rounded-xl object-cover" src="assets/img/4.jpeg"
+                      alt="about Us image" />
+                      <img class="sm:ml-0 ml-auto rounded-xl object-cover" src="assets/img/3.jpeg"
+                      alt="about Us image" />
+                      <img class="sm:ml-0 ml-auto rounded-xl object-cover" src="assets/img/2.jpeg"
+                      alt="about Us image" />
+              </div>
+              
+              <div class="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
+                  <div class="w-full flex-col justify-center items-start gap-8 flex">
+                      <div class="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
+                          <h2
+                              class="text-gray-900 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
+                              Despre Noi</h2>
+                          <p class="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
+                            Navirex SRL, cu sediul în Constanța, este o companie de prestigiu în producția de servicii și echipamente destinate domeniului naval avand peste <a id="aniExperienta"></a> ani de activitate. Compania, certificată ISO 9001:2015, se remarcă prin oferirea de soluții tehnice avansate și personalizate pentru nave maritime si fluviale, respectând cele mai stricte reglementări europene și asigurând standarde de excelență. Echipa noastra de profesionisti este intotdeauna pregatita sa va ofere solutii penru toate problemele ce le aveti, nu ezitati sa ne contactati.</p>
+                      </div>
+                      <div class="w-full lg:justify-start justify-center items-center sm:gap-10 gap-5 inline-flex">
+                          
+                          
+                          <div class="flex-col justify-start items-start inline-flex">
+                              <h4 class="text-gray-900 text-4xl font-bold font-manrope leading-normal"><a id="aniExperienta2"></a>+</h4>
+                              <h6 class="text-gray-500 text-base font-normal leading-relaxed">Ani de experiență</h6>
+                          </div>
+                      </div>
+                  </div>
+                  <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })"
+                      class="sm:w-fit w-full px-3.5 py-2 bg-blue-500 hover:bg-blue-800 transition-all duration-700 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">
+                      <span class="px-1.5 text-white text-sm font-medium leading-6">Vezi Servicii</span>
+                  </button>
+              </div>
           </div>
       </div>
-      
-    </section>
+  </section>
 
-    <section id="servicii" class="bg-white p-6 rounded-lg shadow-md mb-6">
-      <h2 class="text-2xl font-bold text-gray-800 mb-4 m-5">Servicii și competențe</h2>
-      <ul class="list-disc list-inside text-gray-700">
-        <li class="text-xl a">Proiectare tehnologică, construcție, montare și punere în funcțiune a echipamentelor electrice terestre și navale</li>
-        <li class="text-xl a">Proiectare tehnologică și confecționare de subansamble electronice</li>
-        <li class="text-xl a">Instalare de echipamente și subansamble de automatizare</li>
-        <li class="text-xl a">Modernizare de echipamente electrice și automatizare</li>
-        <li class="text-xl a">Confecționare de trasee electrice de medie și joasă putere</li>
-        <li class="text-xl a">Construcție de tablouri și elemente de măsură și semnalizare</li>
-        <li class="text-xl a">Lucrări de reparații instalații electrice la nave și verificarea rezistenței de izolație</li>
-        <li class="text-xl a">Lucrări de reparații instalații de automatizare la nave si verificări AMC-uri electrice si mecanice</li>
-        <li class="text-xl a">Lucrări de reparații și întreținere instalații de semnalizare și avarie</li>
-        <li class="text-xl a">Lucrări de reparații și întreținere instalații radio și telefonie</li>
-        <li class="text-xl a">Verificarea releelor termice si electromagnetice ale întrerupătoarelor automate tip USOL 100, 250, 500 (630) A</li>
-        <li class="text-xl a">Verificarea și reglarea releelor termice tip TSA cu truse de curent</li>
-        <li class="text-xl a">Verificarea protecțiilor termice și electromagnetice pentru întrerupători automați cu trusa de curent</li>
-        <li class="text-xl a">Verificarea presostatelor și termostatelor cu trusa de presiune și temperatură</li>
-        <li class="text-xl a">Lucrări de reparații instalații și tubulatură - instalații sanitare și termice, instalații de apă potabilă, instalații de apă menajeră, instalații de balast</li>
-        <li class="text-xl a">Lucrări de mecanică și lăcătușerie ușoară</li>
-        <li class="text-xl a">Reparații motoare și diesel generatoare, mecanisme de propulsive, instalații de punte și instalații hidraulice navale</li>
-        <li class="text-xl a">Montaj și service la indicatoarele vitezei de girație de la bordul navelor fluviale</li>
-        <li class="text-xl a">Execuția iluminatului de joasă înălțime la bordul navelor de pasageri</li>
-        <li class="text-xl a">Montaj și service la sistemul de lumini de navigație la navele maritime și fluviale</li>
 
-      </ul>
-    </section>
+  <section id="servicii" class="bg-white p-6 rounded-lg shadow-md mb-6">
+    <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Servicii și competențe</h2>
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+        <ul class="space-y-4 text-gray-700">
+            <li class="flex items-start gap-3">
+                <i class="fa-solid fa-wrench text-blue-500 mt-1"></i>
+                <span>Proiectare tehnologică, construcție, montare și punere în funcțiune a echipamentelor electrice terestre și navale</span>
+            </li>
+            <li class="flex items-start gap-3">
+                <i class="fa-solid fa-microchip text-blue-500 mt-1"></i>
+                <span>Proiectare tehnologică și confecționare de subansamble electronice</span>
+            </li>
+            <li class="flex items-start gap-3">
+                <i class="fa-solid fa-screwdriver-wrench text-blue-500 mt-1"></i>
+                <span>Instalare de echipamente și subansamble de automatizare</span>
+            </li>
+            <li class="flex items-start gap-3">
+                <i class="fa-solid fa-bolt text-blue-500 mt-1"></i>
+                <span>Modernizare de echipamente electrice și automatizare</span>
+            </li>
+            <li class="flex items-start gap-3">
+                <i class="fa-solid fa-plug text-blue-500 mt-1"></i>
+                <span>Confecționare de trasee electrice de medie și joasă putere</span>
+            </li>
+            <li class="flex items-start gap-3">
+                <i class="fa-solid fa-server text-blue-500 mt-1"></i>
+                <span>Construcție de tablouri și elemente de măsură și semnalizare</span>
+            </li>
+            <li class="flex items-start gap-3">
+                <i class="fa-solid fa-tools text-blue-500 mt-1"></i>
+                <span>Lucrări de reparații instalații electrice la nave și verificarea rezistenței de izolație</span>
+            </li>
+            <li class="flex items-start gap-3">
+                <i class="fa-solid fa-cogs text-blue-500 mt-1"></i>
+                <span>Lucrări de reparații instalații de automatizare la nave și verificări AMC-uri electrice și mecanice</span>
+            </li>
+            <li class="flex items-start gap-3">
+                <i class="fa-solid fa-lightbulb text-blue-500 mt-1"></i>
+                <span>Execuția iluminatului de joasă înălțime la bordul navelor de pasageri</span>
+            </li>
+            <li class="flex items-start gap-3">
+                <i class="fa-solid fa-anchor text-blue-500 mt-1"></i>
+                <span>Montaj și service la sistemul de lumini de navigație la navele maritime și fluviale</span>
+            </li>
+        </ul>
 
-    <section id="contact" class="bg-white p-6 rounded-lg shadow-md">
-        <div class="text-xl container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
-              <h2 class="text-2xl font-bold m-5">Contact</h2>
-              <p class="text-gray-800">Constanța, Str. I.L.Caragiale, nr. 2A, bl. L112 </p>
-              <p class="text-gray-800"><i class="fa-solid fa-phone"></i><a href="tel:+40241517279" class="text-blue-400 hover:underline">0241 517 279</a></p>
-              <p class="text-gray-800"><i class="fa-solid fa-square-envelope"></i><a href="mailto:office@navirex.ro" class="text-blue-400 hover:underline">office@navirex.ro</a></p>
-              <p class="text-gray-800">CIF: RO2742456 </p>
-              <p class="text-gray-800">J13/5703/1992</p>
+        <ul class="space-y-4 text-gray-700">
+            <li class="flex items-start gap-3">
+                <i class="fa-solid fa-bolt-lightning text-blue-500 mt-1"></i>
+                <span>Lucrări de reparații și întreținere instalații de semnalizare și avarie</span>
+            </li>
+            <li class="flex items-start gap-3">
+                <i class="fa-solid fa-wifi text-blue-500 mt-1"></i>
+                <span>Lucrări de reparații și întreținere instalații radio și telefonie</span>
+            </li>
+            <li class="flex items-start gap-3">
+                <i class="fa-solid fa-plug-circle-bolt text-blue-500 mt-1"></i>
+                <span>Verificarea releelor termice și electromagnetice ale întrerupătoarelor automate</span>
+            </li>
+            <li class="flex items-start gap-3">
+                <i class="fa-solid fa-battery-three-quarters text-blue-500 mt-1"></i>
+                <span>Verificarea și reglarea releelor termice tip TSA cu truse de curent</span>
+            </li>
+            <li class="flex items-start gap-3">
+                <i class="fa-solid fa-temperature-high text-blue-500 mt-1"></i>
+                <span>Verificarea protecțiilor termice și electromagnetice pentru întrerupători automați</span>
+            </li>
+            <li class="flex items-start gap-3">
+                <i class="fa-solid fa-gauge text-blue-500 mt-1"></i>
+                <span>Verificarea presostatelor și termostatelor cu trusa de presiune și temperatură</span>
+            </li>
+            <li class="flex items-start gap-3">
+                <i class="fa-solid fa-pipe text-blue-500 mt-1"></i>
+                <span>Lucrări de reparații instalații și tubulatură – instalații sanitare și termice</span>
+            </li>
+            <li class="flex items-start gap-3">
+                <i class="fa-solid fa-hammer text-blue-500 mt-1"></i>
+                <span>Lucrări de mecanică și lăcătușerie ușoară</span>
+            </li>
+            <li class="flex items-start gap-3">
+                <i class="fa-solid fa-gears text-blue-500 mt-1"></i>
+                <span>Reparații motoare și diesel generatoare, mecanisme de propulsie</span>
+            </li>
+            <li class="flex items-start gap-3">
+                <i class="fa-solid fa-compass text-blue-500 mt-1"></i>
+                <span>Montaj și service la indicatoarele vitezei de girație de la bordul navelor fluviale</span>
+            </li>
+        </ul>
+    </div>
+</section>
 
-            </div>
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d850.6937469892742!2d28.628732382107657!3d44.17861035160875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40bae545cd96d3f3%3A0xa2a0e11be7981e0a!2sNAVIREX!5e0!3m2!1sro!2sro!4v1737890656248!5m2!1sro!2sro" 
-                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
-    </section>
+
+    
+
+<section id="contact" class="bg-white p-6 rounded-lg shadow-md">
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <!-- Contact Information -->
+      <div class="space-y-6">
+          <h2 class="text-3xl font-bold text-gray-900">Contact</h2>
+          <p class="text-gray-800 flex items-center gap-3">
+              <i class="fa-solid fa-location-dot text-blue-500 text-2xl"></i>
+              Constanța, Str. I L Caragiale, nr. 2A, bl. L112
+          </p>
+          <p class="text-gray-800 flex items-center gap-3">
+              <i class="fa-solid fa-phone text-blue-500 text-2xl"></i>
+              <a href="tel:+40241517279" class="text-blue-400 hover:underline">0241 517 279</a>
+          </p>
+          <p class="text-gray-800 flex items-center gap-3">
+              <i class="fa-solid fa-envelope text-blue-500 text-2xl"></i>
+              <a href="mailto:office@navirex.ro" class="text-blue-400 hover:underline">office@navirex.ro</a>
+          </p>
+      </div>
+
+      <!-- Google Maps -->
+      <div class="relative w-full h-72 md:h-96 rounded-lg overflow-hidden shadow-lg">
+          <iframe class="absolute top-0 left-0 w-full h-full border-none"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d850.6937469892742!2d28.628732382107657!3d44.17861035160875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40bae545cd96d3f3%3A0xa2a0e11be7981e0a!2sNAVIREX!5e0!3m2!1sro!2sro!4v1737890656248!5m2!1sro!2sro"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+      </div>
+  </div>
+</section>
+
+  
   </main>
 
   <footer class="bg-gray-800 text-white p-4 text-center mt-auto">
-    &copy; 2025 Navirex SRL. Toate drepturile rezervate.
+    &copy; <a id="anCurent"></a> Navirex SRL. Toate drepturile rezervate.<br/>RO2742456 | J13/5703/1992
   </footer>
 </div>
 </body>
